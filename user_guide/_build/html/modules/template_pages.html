@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Template Pages &mdash; Manifesto User Guide 2.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '2.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="Manifesto User Guide 2.0 documentation" href="../index.html" />
+    <link rel="up" title="Working with Content" href="../managing_content.html" />
+    <link rel="next" title="Event Calendar" href="event_calendar.html" />
+    <link rel="prev" title="Working with Content" href="../managing_content.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="event_calendar.html" title="Event Calendar"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../managing_content.html" title="Working with Content"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">Manifesto User Guide 2.0 documentation</a> &raquo;</li>
+          <li><a href="../managing_content.html" accesskey="U">Working with Content</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="template-pages">
+<h1>Template Pages<a class="headerlink" href="#template-pages" title="Permalink to this headline">¶</a></h1>
+<p>The Template Pages module is responsible for generating most of the content pages on your website. They provide a flexible way to create consistent page layouts with static content, custom fields, or content embedded from other modules.</p>
+<p>Template Pages are generally managed hierarchically, mimicking the structure of the site architecture, and are capable of generating their own top-level navigation structure using Manifesto’s built-in Navigation hooks. Large websites, however, often employ the Menus module to provide fine-grained control over menu generation. Either way, it is beneficial to organize the hierarchy of your pages in such a way that you can easily find the content you need to manage.</p>
+<p>Template pages basically come in two flavors:</p>
+<ul class="simple">
+<li>Static HTML pages (Title, Summary, Body, optional photos)</li>
+<li>Custom templates designed to include or embed content from other modules <em>in addition to</em> allowing static HTML text</li>
+</ul>
+<p>Template definitions should only be created by trained and qualified developers who are comfortable creating and editing HTML files. For most websites, the development team creates a series of templates which cover the various layout needs for your website. New pages are then built using these predefined templates.</p>
+<p>In the screenshot below, you see a listing of the top-level pages in the Template Pages module. The first column displays the page title, and the middle column displays the template used to display the page content.</p>
+<div class="figure">
+<img alt="../_images/template-pages-listing.png" src="../_images/template-pages-listing.png" />
+</div>
+<div class="section" id="creating-a-new-page">
+<h2>Creating a new page<a class="headerlink" href="#creating-a-new-page" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>On the listing page, you can either select the templlate you wish to use for your new page, or click &#8220;Browse the templates&#8221; if you aren&#8217;t sure. The browsing page gives you a brief description of each template so you can understand its function and layout. There may be a variety of different templates unique to your site, and each site is different, so be sure you are familiar with the particularities of your templates.</li>
+</ol>
+<div class="figure">
+<img alt="../_images/template-pages-add.png" src="../_images/template-pages-add.png" />
+</div>
+<ol class="arabic" start="2">
+<li><p class="first">Once you know which template you are going to use, select it and you will be taken to the editing screen.</p>
+</li>
+<li><p class="first">The first field on the editing screen is the current template in use. You may select a different template, but because another template may include different custom fields, the page will be refreshed to output a form appropriate for the new template.</p>
+</li>
+<li><p class="first">Next, you are presented with two menus that allow you to locate your new page within the current hierarchy on the site. First, select a parent page from the menu. Any page can act as a parent for any other page &#8211; there is no limit on the nesting hierarchy &#8211; so all available pages are shown in this menu. If you wish to create a new top-level page, select &#8220;This is a parent menu.&#8221; Otherwise, select the page you wish to tp act as the parent of your new page.</p>
+<div class="figure">
+<img alt="../_images/template-pages-parent-menu.png" src="../_images/template-pages-parent-menu.png" />
+</div>
+</li>
+<li><p class="first">The <cite>position</cite> menu is contextual, and changes based on the current selectiion of the <cite>parent</cite> menu. When you select a new parent page, the <cite>position</cite> page is updated to allow you to situate your new page among the other children of the parent. Between the <cite>parent</cite> and <cite>position</cite> menus, you can put your new page anywhere within the site hierarchy.</p>
+<div class="figure">
+<img alt="../_images/template-pages-position-menu.png" src="../_images/template-pages-position-menu.png" />
+</div>
+</li>
+<li><p class="first">The <cite>title</cite> and <cite>shortname</cite> fields are pretty straightforward. The <cite>title</cite> property appears at the top of the page, and it usually used for the titlebar in the browser as well. The <cite>shortname</cite> is a URL-friendly representation of the same.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/template-pages-title-field.png" src="../_images/template-pages-title-field.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">The URL path allows you to customize the path for the current page. If you leave this field blank, the default URL struture is</p>
+<blockquote>
+<div><p><cite>http://[your-site.example.com]/mod/template_pages/[parent-shortname]/[page-shortname]/index.php</cite></p>
+<p>You can create a custom URL for your content by entering it here. <em>Leave out the default site URL, and enter only a relative path here.</em></p>
+</div></blockquote>
+</li>
+<li><p class="first">The <cite>Display</cite> checkbox governs whether or not the page will appear on the front end  of the site for the public. You can enable/disable display of this page on the site by toggling this checkbox.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/template-pages-display-checkbox.png" src="../_images/template-pages-display-checkbox.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p class="first"><cite>Summary</cite>: The summary field is optional, and how it is used will depend on the configuration of your site. Depending on your site configuration, you may, for example, have a landing page that displays a thumbnail and summary for all of the pages available on your site. <em>(If you are familiar with WordPress, the summary field acts much like `the_excerpt`).</em></p>
+</li>
+<li><p class="first">The <cite>body</cite> field is where the bulk of the page content will probably be entered. For the most part, this field acts like &#8220;the HTML page content.&#8221; An entirely full-featured website can be constructed of nothing more than template pages with a title and a body. The WYSIWYG editor gives you full access to formatting, link creations, and the uploading of images.</p>
+<div class="figure">
+<img alt="../_images/template-pages-body-field.png" src="../_images/template-pages-body-field.png" />
+</div>
+</li>
+<li><p class="first">All of the fields mentioned so far are consistent across all template pages. The real power of templates pages is in the ability to add custom fields that extend functionality, for example, allowing you to easily embed a form or calendar listing on your page.</p>
+</li>
+</ol>
+<div class="figure">
+<img alt="../_images/template-pages-custom-fields.png" src="../_images/template-pages-custom-fields.png" />
+</div>
+<ol class="arabic" start="12">
+<li><p class="first">The options available for custom fields is limitless, and could not possibly be covered in this document. But a few examples might help.</p>
+<blockquote>
+<div><ul class="simple">
+<li>You might, for example, have a series of pages about your numerous office locations. Each one of those pages will need to have a different office address, phone number, and perhaps a map image. While you could simply embed this information in the body field of your page, that means that the formatting (boldface, line breaks, consistency) is left entirely up to you to manage in the WYSIWYG editor. Since we are dealing with consistent, structured data, it would be nice if we could simply create custom fields to request and store this information.</li>
+<li>In this case, we could use a template with 3 custom fields for our office locations: address (a simple text area), phone number (text input), and a map image (custom image selector). This way we can store (and display) the data consistently, and it also allows us to have the option to make one or more of these fields required, so that we cannot submit the form without completing it. These benefits would not be available if we simply included the information in our body copy.</li>
+<li>Another common use of custom fields might be used by a custom template designed to display an embedded form created by the FormBuilder module. In this case, you would simply be presented with a drop-down menu that would allow you to select which form to embed on the page. The template itself &#8211; created by a developer &#8211; would contain all the markup and logic to handle processing the form submission.</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">The <cite>Editor Display</cite> page that you usually see after submitting an editing form in the Editor Console is not designed to display the content in the proper context of the front-end display, so it can be difficult to envisage the front-end layout. To give you a better indication of what your content will look like on the public site, there is a <cite>Preview</cite> button at the bottom of the form. Clicking this will attempt to display your current page within the context of front-end stylesheets and layouts without actually finalizing the saving of your data.</p>
+</li>
+<li><p class="first">When you are satisfied with your content, click <cite>Submit</cite> and your page will be saved.</p>
+</li>
+<li><p class="first">As with most content in Manifesto, you can select what page you want to see after submitting your content. By default, you will see the <cite>editor display</cite> page, but you can also choose to return to the listing page, or to immediately jump to adding another new template page.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="moving-a-page">
+<h2>Moving a page<a class="headerlink" href="#moving-a-page" title="Permalink to this headline">¶</a></h2>
+<p>There are two ways to alter the location of a template page on your site:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>From the listing page, you can click on the dotted bar on the left-hand edge of a row to drag that page <em>and all of its descendants</em> to a new position. Manifesto will reorganize all of your pages to accomodate the new position.</li>
+<li>From the editing form of a specific page, you can select a new <cite>parent</cite> and <cite>position</cite> value from their respective menus. After submitting the form, the current page <em>and all of its descendents</em> will be re-ordered to their new location.</li>
+</ol>
+</div></blockquote>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Template Pages</a><ul>
+<li><a class="reference internal" href="#creating-a-new-page">Creating a new page</a></li>
+<li><a class="reference internal" href="#moving-a-page">Moving a page</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="../managing_content.html"
+                        title="previous chapter">Working with Content</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="event_calendar.html"
+                        title="next chapter">Event Calendar</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/modules/template_pages.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="event_calendar.html" title="Event Calendar"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../managing_content.html" title="Working with Content"
+             >previous</a> |</li>
+        <li><a href="../index.html">Manifesto User Guide 2.0 documentation</a> &raquo;</li>
+          <li><a href="../managing_content.html" >Working with Content</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2014, a.h.s. boy.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3b1.
+    </div>
+  </body>
+</html>

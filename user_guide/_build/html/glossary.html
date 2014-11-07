@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Glossary of Manifesto Terms &mdash; Manifesto User Guide 2.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '2.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Manifesto User Guide 2.0 documentation" href="index.html" />
+    <link rel="next" title="User accounts and Login" href="accounts.html" />
+    <link rel="prev" title="Overview of Manifesto" href="overview.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="accounts.html" title="User accounts and Login"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="overview.html" title="Overview of Manifesto"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Manifesto User Guide 2.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="glossary-of-manifesto-terms">
+<h1>Glossary of Manifesto Terms<a class="headerlink" href="#glossary-of-manifesto-terms" title="Permalink to this headline">¶</a></h1>
+<p>To facilitate clarity when discussing various aspects of Manifesto, this glossary offers definitions for terms used to describe elements and concepts in Manifesto.</p>
+<dl class="glossary docutils">
+<dt id="term-admin-console"><strong>Admin Console</strong></dt>
+<dd>The administrative and site configuration in Manifesto is contained behind another password-protected portal located at <a class="reference external" href="http://">http://</a>www.whctemple.org/admin. The term <em>admin console</em> is generically used to describe that section of the website.</dd>
+<dt id="term-cache"><strong>Cache</strong></dt>
+<dd><p class="first">The <em>cache</em> is a data storage system for quickly retrieving information that might be time-intensive to recreate. For example, building a page listing your Board of Directors requires one or more database queries to retrieve the personanel listing, corresponding photos, etc. Since the listing is unlikely to change on a daily basis, it is considered safe to simply store the fully-assembled page for 24 hours, and avoid returning to the database every time the page is requested.</p>
+<p class="last">There are, of course, rather complicated rules in place to help ensure that the &#8220;freshness&#8221; of the content is appropriately gauged &#8211; a calendar listing needs more constant freshening than a privacy policy page. Manifesto is desgined to handle these situations effectively, always returning the most up-to-date content, but the cache may always be cleared manually without repercussion.</p>
+</dd>
+<dt id="term-content-object"><strong>Content Object</strong></dt>
+<dd><p class="first">This term is used to describe a specific instance of a <em>Content Type</em>. While &#8220;CalendarEvent&#8221; is a <em>content type, the event &#8220;Lunch with Bono on January 12&#8221; is a *content object</em> &#8211; a particular instance of a generic type. You can generally think of content objects as analogs to their real world counterparts: a book, an event, a user profile, an HTML page &#8211; these are all various <em>content objects</em> you may find in Manifesto.</p>
+<p class="last">There is no direct relationship between a &#8220;web page&#8221; and a &#8220;content object&#8221; &#8211; a web page may display several content objects at once (a listing of upcoming events), or just one (a single blog post and nothing else).</p>
+</dd>
+<dt id="term-content-type"><span id="term-class"></span><strong>Content Type</strong><br /><strong>Class</strong></dt>
+<dd><p class="first">A specific collection of data properties (&#8220;title&#8221;, &#8220;author&#8221;, &#8220;body copy&#8221;, &#8220;date of publication&#8221;) is generically referred to as a <em>Content Type</em>. A PHP Class file in Manifesto usually defines the structure of a content type, enumerating its properties, and methods for maniulating it (display, edit, update, etc).</p>
+<p class="last">Often referred to simply a <em>class,</em> since the PHP class file is what describes the technical implementation of a content type.</p>
+</dd>
+<dt id="term-editor-console"><strong>Editor Console</strong></dt>
+<dd>The editorial management of content in Manifesto is contained behind a password-protected portal located at <a class="reference external" href="http://">http://</a>www.whctemple.org/editor. The term <em>editor console</em> is generically used to describe that section of the website.</dd>
+<dt id="term-icon"><strong>Icon</strong></dt>
+<dd>When more than one image is associated with a content object, we may wish to select one of these images to be the official representative photo for the content. Such a selected photo is referred to as the <cite>icon</cite> of the content.</dd>
+<dt id="term-module"><strong>Module</strong></dt>
+<dd><p class="first">Manifesto organizes groups of content types and functionality into collections called <em>modules.</em> For example, if you decide &#8220;I want to have a calendar on my website,&#8221; you are really asking for a collection of things:</p>
+<ul class="simple">
+<li>A CalendarEvent class</li>
+<li>An EventLocation class</li>
+<li>Forms that allow you to edit event and location objects</li>
+<li>A set of templates that can display listings, details, and other views of the information</li>
+</ul>
+<p>This collecton of class files and acoompanying scripts is referred to as a module, and such modules form the basis of a Manifesto website.</p>
+<p class="last">Modules in Manifesto are designed to be self-contained, with their own class definitons, their own scripts, images, and stylesheets. Modules can be enabled and disabled on a case-by-case basis, and a well-designed module can be turned on and off without affecting any other aspects of the site.</p>
+</dd>
+<dt id="term-oracle"><strong>Oracle</strong></dt>
+<dd><p class="first">The class of Manifesto objects responsible for querying the appropriate tables in the database. There is a base Oracle class that contains all of the methods needed to build and execute a SQL query, and most content types define their own class of Oracle configured to their specific needs.</p>
+<p class="last">So, for example, the BlogEntryOracle inherits the functionality of the Oracle class, but is pre-configured to query the <cite>blog_entries</cite> table, and to return results in reverse chronological order.</p>
+</dd>
+<dt id="term-shortname"><strong>Shortname</strong></dt>
+<dd><p class="first">The <cite>shortname</cite> field is a common property of many types of content in Manifesto. Basically, the <cite>shortname</cite> is an abbreviated, URL-friendly version of the normal identifier for the content (like <cite>title</cite>). In order to allow Manifesto to build programmatic URLs for content, you may often be asked to provide a <cite>shortname</cite> for your content. In most cases, Manifesto will try to intelligently offer a suggested shortname for you, based on the title or other identifier in your content.</p>
+<p class="last">The most important thing to remember is that it needs to be URL safe. No spaces or strange punctuation. Dashed are usually used to separate words, but most other punctuation is removed.</p>
+</dd>
+</dl>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="overview.html"
+                        title="previous chapter">Overview of Manifesto</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="accounts.html"
+                        title="next chapter">User accounts and Login</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/glossary.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="accounts.html" title="User accounts and Login"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="overview.html" title="Overview of Manifesto"
+             >previous</a> |</li>
+        <li><a href="index.html">Manifesto User Guide 2.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2014, a.h.s. boy.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3b1.
+    </div>
+  </body>
+</html>

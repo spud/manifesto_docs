@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Staff &mdash; Manifesto User Guide 2.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '2.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="Manifesto User Guide 2.0 documentation" href="../index.html" />
+    <link rel="up" title="Working with Content" href="../managing_content.html" />
+    <link rel="next" title="HTML Rotator" href="html_rotator.html" />
+    <link rel="prev" title="Blog" href="blog.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="html_rotator.html" title="HTML Rotator"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="blog.html" title="Blog"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">Manifesto User Guide 2.0 documentation</a> &raquo;</li>
+          <li><a href="../managing_content.html" accesskey="U">Working with Content</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="staff">
+<h1>Staff<a class="headerlink" href="#staff" title="Permalink to this headline">¶</a></h1>
+<p>The Staff module provides a convenient means of maintaining a directory of personnel, members, staff, or employeees. Combining individual profile records with a powerful system of categorization allows for flexible uses.</p>
+<p>Staff profiles consist of basic personal information:</p>
+<ul class="simple">
+<li>Full Name</li>
+<li>First Name</li>
+<li>Middle Name</li>
+<li>Last Name</li>
+<li>Posnomials (&#8220;Ph.D&#8221;,&#8221;Sr&#8221;,etc)</li>
+<li>Department</li>
+<li>Position</li>
+<li>Phone</li>
+<li>Address</li>
+<li>Address2</li>
+<li>City</li>
+<li>State</li>
+<li>ZIP</li>
+<li>Country</li>
+<li>Email</li>
+<li>Public</li>
+<li>Alternate Email</li>
+<li>Biography</li>
+</ul>
+<p>When you combine this information with one or more category groups, you can develop complex records. For example, if you add 2 category groups called</p>
+<p><strong>Membership Level</strong>
+and
+<strong>Region</strong></p>
+<p>you could manage a nicely comprehensive, sortable directory of members.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Even if the module is used for something other than &#8220;staff,&#8221; we will still refer to the profile records as <em>Staff Member</em>.</p>
+</div>
+<div class="figure">
+<img alt="../_images/staff-listing.png" src="../_images/staff-listing.png" />
+</div>
+<div class="section" id="creating-a-new-staff-profile">
+<h2>Creating a new staff profile<a class="headerlink" href="#creating-a-new-staff-profile" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>From the listing page shown above, click the &#8220;New Staff Member&#8221; link.</li>
+</ol>
+<div class="figure">
+<img alt="../_images/staff-edit.png" src="../_images/staff-edit.png" />
+</div>
+<ol class="arabic" start="2">
+<li><p class="first">You are presented with the editing form. In the example above, there is a single associated Category Group called <em>Staff Groups</em> with categories like <em>Staff</em> and <em>Clergy</em>. You may select more than one category to associate with your record.</p>
+</li>
+<li><p class="first">The rest of the information is straightforward, and some fields, like <em>Department</em> and <em>Position</em>, can be used in different ways to suit various scenarios.</p>
+</li>
+<li><p class="first">While there is a menu for <em>Sort Order</em> on the editing page, it is usually more convenient to use the drag-n-drop interface on the listing page to sort your staff members.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">There is currently only <em>one</em> overarching sort order that covers all staff profiles. Therefore, complex combinations of filtering (e.g. by category or department) and custom sort orders can require very careful ordering.</p>
+</div>
+</li>
+<li><p class="first">You may upload one or more images or files to associate with the profile, as with most content. If you associate an image and check the &#8220;Use this image as the icon for this content&#8221; box, for example, your display templates could use that image as the thumbnail avatar for that member.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="creating-a-custom-sort-order">
+<h2>Creating a custom sort order<a class="headerlink" href="#creating-a-custom-sort-order" title="Permalink to this headline">¶</a></h2>
+<p>Templates can obviously be developed to dynamically sort staff profiles based on last name, department, or other properties of the profile, of course. But in the real world, hierarchies and org charts are complex creatures.</p>
+<p>When sorting staff profiles, be sure that you are not filtering the listing by any particular category. There is only one sort order for the entire listing, so the only way to ensure that you are accounting for every members sort order is to sort a complete, unfiltered listing.</p>
+<p>Drag the profiles into the desired order. The sort order will be updated on the fly as you manually shuffle the listing, and will give feedback on the completion of the sorting, so take note to allow time for the operation to complete!</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If you suspect that your sort order has become unmanageably corrupted, you can manually request the page <code class="docutils literal"><span class="pre">http://|yoursite.example.com|/editor/Staff/index.php?e_section=staff&amp;function=resort</span></code>. <strong>This will completely resort your entire set of records,</strong> but will ensure that each record has a unique sort order, often clearing up issues.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Staff</a><ul>
+<li><a class="reference internal" href="#creating-a-new-staff-profile">Creating a new staff profile</a></li>
+<li><a class="reference internal" href="#creating-a-custom-sort-order">Creating a custom sort order</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="blog.html"
+                        title="previous chapter">Blog</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="html_rotator.html"
+                        title="next chapter">HTML Rotator</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/modules/staff.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="html_rotator.html" title="HTML Rotator"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="blog.html" title="Blog"
+             >previous</a> |</li>
+        <li><a href="../index.html">Manifesto User Guide 2.0 documentation</a> &raquo;</li>
+          <li><a href="../managing_content.html" >Working with Content</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2014, a.h.s. boy.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3b1.
+    </div>
+  </body>
+</html>

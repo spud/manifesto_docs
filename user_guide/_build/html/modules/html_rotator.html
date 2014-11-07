@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>HTML Rotator &mdash; Manifesto User Guide 2.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '2.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="Manifesto User Guide 2.0 documentation" href="../index.html" />
+    <link rel="up" title="Working with Content" href="../managing_content.html" />
+    <link rel="next" title="FormBuilder" href="formbuilder.html" />
+    <link rel="prev" title="Staff" href="staff.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="formbuilder.html" title="FormBuilder"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="staff.html" title="Staff"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">Manifesto User Guide 2.0 documentation</a> &raquo;</li>
+          <li><a href="../managing_content.html" accesskey="U">Working with Content</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="html-rotator">
+<h1>HTML Rotator<a class="headerlink" href="#html-rotator" title="Permalink to this headline">¶</a></h1>
+<p>The HTML Rotator module creates custom slideshows that combine images and HTML text. It is broken up into two components:</p>
+<ol class="arabic simple">
+<li>The <strong>HTML Rotator</strong>, which is the container. It can have a title and introductory test, and it defines which output template to use and has a <em>location</em> property, which instructs the page template where to embed the rotator. <em>Rotators cannot currently be embedded in editor-supplied body copy.</em></li>
+<li>The <strong>HTML Rotator Slides</strong>, which are the individual elements in the rotator.</li>
+</ol>
+<p>The only rotator in use on <a class="reference external" href="http://">http://</a>www.whctemple.org/ is hard-coded into the home page template. It is used to display important announcements or information that may need to be updated frequently.</p>
+<p>There is no limit to the number of slides you may have in a rotator, though they do all occupy a certain amount of memory, and can slow down page loads. 1-6 is the usual range.</p>
+<p>If you click to list the slides in your &#8220;Home Page Rotator&#8221;, you will see a listing of editing slides, and you can re-order the items, or click &#8220;New Slide&#8221; button.</p>
+<div class="figure">
+<img alt="../_images/html-rotator-slides-listing.png" src="../_images/html-rotator-slides-listing.png" />
+</div>
+<div class="section" id="creating-a-new-slide">
+<h2>Creating a new slide<a class="headerlink" href="#creating-a-new-slide" title="Permalink to this headline">¶</a></h2>
+<p>A new slide has 4 basic properties:</p>
+<ol class="arabic simple">
+<li>The HTML Rotator to which it belongs</li>
+<li>A title, which may or may not be displayed, depending on the output template</li>
+<li>HTML text, the body copy of the slide</li>
+<li>Its sort order (or position in the rotation)</li>
+</ol>
+<div class="figure">
+<img alt="../_images/html-rotator-slide-edit-1.png" src="../_images/html-rotator-slide-edit-1.png" />
+</div>
+<p>If your output template includes images, you can also select or upload an image in the usual fashion, and click &#8220;Use this image as an icon&#8221; checkbox to make it the default accompaniement image for your slide. Depending on your template, the image might appear alongside the text, below the text, or it may be used as a background image with your HTML as a text overlay.</p>
+<div class="figure">
+<img alt="../_images/html-rotator-slide-edit-media.png" src="../_images/html-rotator-slide-edit-media.png" />
+</div>
+<p>Since only the iconic image associated with the slide will be display, you can make your slides more re-usable by uploading multiple images to a single slide, and then selectively changing which one of them should be treated as the &#8220;icon&#8221; image.</p>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">This means that you could have a slide called &#8220;Holiday Service Hours,&#8221; and you could have 4 images, each representing a different holiday. Rather than constantly creating new slides four times a year, simply alter the text as needed, and change the associated holiday image to become the icon!</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">HTML Rotator</a><ul>
+<li><a class="reference internal" href="#creating-a-new-slide">Creating a new slide</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="staff.html"
+                        title="previous chapter">Staff</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="formbuilder.html"
+                        title="next chapter">FormBuilder</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/modules/html_rotator.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="formbuilder.html" title="FormBuilder"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="staff.html" title="Staff"
+             >previous</a> |</li>
+        <li><a href="../index.html">Manifesto User Guide 2.0 documentation</a> &raquo;</li>
+          <li><a href="../managing_content.html" >Working with Content</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2014, a.h.s. boy.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3b1.
+    </div>
+  </body>
+</html>
