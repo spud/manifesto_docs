@@ -32,6 +32,12 @@ To facilitate clarity when discussing various aspects of Manifesto, this glossar
    **Icon**
       When more than one image is associated with a content object, we may wish to select one of these images to be the official representative photo for the content. Such a selected photo is referred to as the `icon` of the content.
 
+   **Landing Page**
+      This usually refers to the top-level page of a particular section of your website, e.g. the page you arrive at when you click on "News" might be referred to as the "News landing page."
+
+   **Listing Page**
+      This expression is used to describe the common page which displays a simple list of all the available objects in a particular module. On the back end, it is the default format for presenting existing content for editing. On the front end, this phrase might refer to e.g. the page that displays your staff directory or list of locations. For sections of the website without much textual content, the "listing page" might also be called a "landing page."
+
    **Module**
       Manifesto organizes groups of content types and functionality into collections called *modules.* For example, if you decide "I want to have a calendar on my website," you are really asking for a collection of things:
 

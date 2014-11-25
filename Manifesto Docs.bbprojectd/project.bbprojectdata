@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>HierarchyData</key>
+	<array>
+		<string>576E7D89-A111-4ACC-9DB2-2BA0CEC05B2C</string>
+	</array>
+	<key>ProjectItems</key>
+	<dict>
+		<key>576E7D89-A111-4ACC-9DB2-2BA0CEC05B2C</key>
+		<dict>
+			<key>ItemData</key>
+			<dict>
+				<key>BookmarkData</key>
+				<data>
+				Ym9vazwDAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAAAAAAAAUAIAAAUAAAABAQAAVXNlcnMA
+				AAAEAAAAAQEAAHNwdWQDAAAAAQEAAFZNcwAFAAAAAQEA
+				AHNpdGVzAAAADgAAAAEBAABtYW5pZmVzdG9fZG9jcwAA
+				FAAAAAEGAAAEAAAAFAAAACAAAAAsAAAAPAAAAAgAAAAE
+				AwAA5g0OAAAAAAAIAAAABAMAAPYNDgAAAAAACAAAAAQD
+				AAD6x00FAAAAAAgAAAAEAwAAQshNBQAAAAAIAAAABAMA
+				AG6ibQYAAAAAFAAAAAEGAABwAAAAgAAAAJAAAACgAAAA
+				sAAAABgAAAABAgAAAgAAAAAAAAAPAAAAAAAAAAAAAAAA
+				AAAABAAAAAMDAAADAAAABAAAAAMDAAD1AQAABQAAAAEB
+				AABQb2ludAAAAAgAAAAEAwAAAICBPXQAAAAIAAAAAAQA
+				AEGxtAmGAAAAJAAAAAEBAAA0ODkyMkVEMS01Q0FDLTM1
+				N0UtQUE4OC03RTQzRDE3NkUzNkUYAAAAAQIAAIEAAAAB
+				AAgA7z8AAAEACAAAAAAAAAAAAAEAAAABAQAALwAAAAAA
+				AAABBQAApAAAAAECAAA2MjU1MTRiMTU0NzQ4MzFhM2Q2
+				ODdmY2MyOWQ4NDE5YzA5Mzc5YTYyOzAwMDAwMDAwOzAw
+				MDAwMDIwO2NvbS5hcHBsZS5hcHAtc2FuZGJveC5yZWFk
+				LXdyaXRlOzAwMDAwMDAxOzBlMDAwMDA1OzAwMDAwMDAw
+				MDY2ZGEyNmU7L3VzZXJzL3NwdWQvdm1zL3NpdGVzL21h
+				bmlmZXN0b19kb2NzALQAAAD+////AQAAAAAAAAAOAAAA
+				BBAAAFQAAAAAAAAABRAAAMAAAAAAAAAAEBAAANwAAAAA
+				AAAAAiAAAJABAAAAAAAAECAAABQBAAAAAAAAESAAAEQB
+				AAAAAAAAEiAAACQBAAAAAAAAEyAAADQBAAAAAAAAICAA
+				AHABAAAAAAAAMCAAAJwBAAAAAAAAAcAAAPwAAAAAAAAA
+				EcAAABQAAAAAAAAAEsAAAAgBAAAAAAAAgPAAAKQBAAAA
+				AAAA
+				</data>
+				<key>FileURL</key>
+				<string>file://localhost/Users/spud/VMs/sites/manifesto_docs/</string>
+				<key>RelativePath</key>
+				<string>./</string>
+				<key>TypeID</key>
+				<string>_CFileLocator</string>
+				<key>Version</key>
+				<integer>1</integer>
+			</dict>
+			<key>ItemName</key>
+			<string>manifesto_docs</string>
+			<key>ItemType</key>
+			<string>FolderReference</string>
+		</dict>
+	</dict>
+	<key>com.barebones.DocumentFormatVersion</key>
+	<integer>5</integer>
+	<key>com.barebones.DocumentType</key>
+	<string>Project</string>
+</dict>
+</plist>
