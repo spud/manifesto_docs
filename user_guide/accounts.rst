@@ -51,9 +51,9 @@ A user with the Admin role can create any type of User Account : regular users, 
 
 An user with only an "Editor" level role can only create less-powerful users (e.g. "User" or "Member" or some other unprivileged role). These options are enforced programmatically, so that editors are not even given the opportunity to assign a role above the level of User.
 
-# Click "New User" and you will be presented with a form to complete
-# The **Username** field is required, and is expected to be a single string with no unusual punctuation. Currently, the characters ``/%~ ,$&#{}'"=`` are considered invalid, and cannot be used in a username.
-# The **Password** and **Confirm Password** need to have the same password entered into each one, to ensure that you have entered it correctly. If they do not match, you will be alerted immediately.
+* Click "New User" and you will be presented with a form to complete
+* The **Username** field is required, and is expected to be a single string with no unusual punctuation. Currently, the characters ``/%~ ,$&#{}'"=`` are considered invalid, and cannot be used in a username.
+* The **Password** and **Confirm Password** need to have the same password entered into each one, to ensure that you have entered it correctly. If they do not match, you will be alerted immediately.
 
 
 Forgotten Password
