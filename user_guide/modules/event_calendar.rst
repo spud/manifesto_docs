@@ -68,7 +68,7 @@ Creating a new event
       :width: 600 px
       :align: center
 
-4. The **Location** menu gives you the ability to select from a predefined list of locations (see the :ref:`class-event-location` section below) created elsewhere. If your desired venue is not listed there, you may select "Other Location" and provide your own *Name* and *Directions* to the facility.
+4. The **Location** menu gives you the ability to select from a predefined list of locations (see the :ref:`class-event-location` section below) created elsewhere. If your desired venue is not listed there, you may select "Other Location" and provide your own *Name* and *Directions* to the facility. Manifesto will use that information to create an ad-hoc EventLocation object to represent that location when displaying the event.
 
 5. The **Status** menu allows you to set the status of your event:
 

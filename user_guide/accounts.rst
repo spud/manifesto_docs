@@ -70,7 +70,7 @@ An user with only an "Editor" level role can only create less-powerful users (e.
 The section entitled "Detailed Information" contains additional fields containing more information, such as phone number, alternate email, biography, etc. There is a checkbox labeled **Allow additional personal data to be displayed** — if this checkbox is *not* checked, this additional information will *not* be displayed on the website when using Manifesto's default templates. This rule, however, is only enforced by policy, so when constructing a custom template for displaying users, take care to respect this setting when determining how much user information to display.
 
 Manifesto will automatically generate a page at ``http://|yoursite.example.com|/usr/[id]/index.php``
-that displays the default user profile for that user, regardless of whether or not the site navigation includes any links to such pages.`	1`1
+that displays the default user profile for that user, regardless of whether or not the site navigation includes any links to such pages.
 
 Forgotten Password
 ==================
