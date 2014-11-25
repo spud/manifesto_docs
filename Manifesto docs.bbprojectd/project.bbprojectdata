@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>HierarchyData</key>
+	<array>
+		<string>65A06B4B-E64C-4501-A8BF-9A98EC530C9A</string>
+	</array>
+	<key>ProjectItems</key>
+	<dict>
+		<key>65A06B4B-E64C-4501-A8BF-9A98EC530C9A</key>
+		<dict>
+			<key>ItemData</key>
+			<dict>
+				<key>BookmarkData</key>
+				<data>
+				Ym9va5gDAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAAAAAAAAlAIAAAUAAAABAQAAVXNlcnMA
+				AAAEAAAAAQEAAHNwdWQDAAAAAQEAAFZNcwAFAAAAAQEA
+				AHNpdGVzAAAADgAAAAEBAABtYW5pZmVzdG9fZG9jcwAA
+				FAAAAAEGAAAEAAAAFAAAACAAAAAsAAAAPAAAAAgAAAAE
+				AwAAQpYAAAAAAAAIAAAABAMAAFsfBwAAAAAACAAAAAQD
+				AAAEbmcAAAAAAAgAAAAEAwAA1HJnAAAAAAAIAAAABAMA
+				AI0X2QAAAAAAFAAAAAEGAABwAAAAgAAAAJAAAACgAAAA
+				sAAAAAgAAAAABAAAQboVRq8AAAAYAAAAAQIAAAIAAAAA
+				AAAADwAAAAAAAAAAAAAAAAAAAAQAAAADAwAAAwAAAAQA
+				AAADAwAA9QEAABEAAAABCQAAZmlsZTovL2xvY2FsaG9z
+				dC8AAAAMAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAA
+				ACDBDBwAAAAIAAAAAAQAAEGyTbC3AAAAJAAAAAEBAAA1
+				RDEzNDA4Ni0yQzFBLTNFMzUtQjgxRi1FNTNDNTI3RUJB
+				NjUYAAAAAQIAAIEAAAABAAgA7xcAAAEACAAAAAAAAAAA
+				AAEAAAABAQAALwAAAAAAAAABBQAAtQAAAAECAAA3NjMw
+				OWRmNTY4N2UwYjUyZmQ2MzI1ZTI0ODI5MTVhYzZmZmZj
+				YWViOzAwMDAwMDAwOzAwMDAwMDAwOzAwMDAwMDAwMDAw
+				MDAwMjA7Y29tLmFwcGxlLmFwcC1zYW5kYm94LnJlYWQt
+				d3JpdGU7MDAwMDAwMDE7MDEwMDAwMDI7MDAwMDAwMDAw
+				MGQ5MTc4ZDsvdXNlcnMvc3B1ZC92bXMvc2l0ZXMvbWFu
+				aWZlc3RvX2RvY3MAAAAAzAAAAP7///8BAAAAAAAAABAA
+				AAAEEAAAVAAAAAAAAAAFEAAAwAAAAAAAAAAQEAAA7AAA
+				AAAAAABAEAAA3AAAAAAAAAACIAAAwAEAAAAAAAAFIAAA
+				JAEAAAAAAAAQIAAAQAEAAAAAAAARIAAAdAEAAAAAAAAS
+				IAAAVAEAAAAAAAATIAAAZAEAAAAAAAAgIAAAoAEAAAAA
+				AAAwIAAAzAEAAAAAAAABwAAADAEAAAAAAAARwAAAFAAA
+				AAAAAAASwAAAGAEAAAAAAACA8AAA1AEAAAAAAAA=
+				</data>
+				<key>FileURL</key>
+				<string>file://localhost/Users/spud/VMs/sites/manifesto_docs/</string>
+				<key>RelativePath</key>
+				<string>./</string>
+				<key>TypeID</key>
+				<string>_CFileLocator</string>
+				<key>Version</key>
+				<integer>1</integer>
+			</dict>
+			<key>ItemName</key>
+			<string>manifesto_docs</string>
+			<key>ItemType</key>
+			<string>FolderReference</string>
+		</dict>
+	</dict>
+	<key>com.barebones.DocumentFormatVersion</key>
+	<integer>5</integer>
+	<key>com.barebones.DocumentType</key>
+	<string>Project</string>
+</dict>
+</plist>
