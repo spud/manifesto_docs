@@ -107,4 +107,18 @@ So these are the pieces you combine to build your form. Aside from their field t
 .. figure:: images/formbuilder-field-configure-advanced.*
    :align: center
 
-On the "Advanced" tab of the configuration options,
+On the "Advanced" tab of the configuration options, there are some additional parameters for your form element.
+
+# An **Introductory Text** will appear above your field. You may write as much as you need, and the text will appear below the field label, but above the input element. Useful for providing more detailed instructions on what you are asking of your users.
+
+# The **Prefix** and **Suffix** fields can be used to provide small bits of text before and/or after your input. The most common uses of this are for fields expected to contain prices (might use a "$" prefix), and for fields that you want to make clear are optional (might use an "(optional)" suffix.
+
+# The **Notes** field is for tooltip-like notes on the content or format of the field. It is typically presented to the user as a small circle-I which, when clicked on, reveals the note.
+
+# The **Container Class** and **Element Class** fields allow you to configure your element with custom classes that may be used to style the manner in which they are rendered. The *container class* is assigned to the tag of the element used as a container for the field label, input, options, etc. The *element class* is applied only to the specific element, e.g. the text input field itself, or the individual checkboxes.
+
+# The **Validation Format** menu allows you to add a particular validation check to the input. Selecting "email," for example, will ensure that only a valid email address will be stored in the database.
+
+.. note::
+
+   The outcome of a validation format is also dependent upon whether or not the field is marked as **required.** If a field with a URL validation format is *not* required, then if the user enters an invalid URL, the form will submit but  an empty value will be stored in the database. If the field is marked as **required,** however, the form will not submit until a valid URL is entered.
