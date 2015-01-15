@@ -52,19 +52,29 @@ A user with the Admin role can create any type of User Account : regular users, 
 An user with only an "Editor" level role can only create less-powerful users (e.g. "User" or "Member" or some other unprivileged role). These options are enforced programmatically, so that editors are not even given the opportunity to assign a role above the level of User.
 
 * Click "New User" and you will be presented with a form to complete
+
 * The **Username** field is required, and is expected to be a single string with no unusual punctuation. Currently, the characters ``/%~ ,$&#{}'"=`` are considered invalid, and cannot be used in a username.
+
 * The **Password** and **Confirm Password** need to have the same password entered into each one, to ensure that you have entered it correctly. If they do not match, you will be alerted immediately.
-* **First Name** and **Last Name** should be self-explanatory
+
+* **First Name** and **Last Name** should be self-explanatory.
+
 * **Display Name** is the name used for bylines on the website. It could be a full name, nickname, or other pseudonym.
+
 * **Email** is a required field, and the address entered is normally used to send a confirmation email in order the verify the account.
-* ##Email Verification##: As was just stated, Manifesto uses a confirmation email to verify that the email address associated with your account is valid. This provides a bare minimum guarantee of accountability, since we can at least confirm that we have a means for contacting the user associated with the account.
+
+* **Email Verification**: As was just stated, Manifesto uses a confirmation email to verify that the email address associated with your account is valid. This provides a bare minimum guarantee of accountability, since we can at least confirm that we have a means for contacting the user associated with the account.
   This field is set to "Unverified" for all new users. When set to "unverified," a random key is stored in the database, and an email is automatically sent to the email address entered. The email body contains a link that corresponds to the random key, and when the user clicks on the email link, the key is erased and the user is marked as "Verified."
   An editor or administrator can automatically set the status to "Verified," if they are sure the email address is valid.
   Setting the status of this field to "Not requested" lies directly in-between — the user is not considered "unverified," but it cannot be assumed that the user has a confirmed email address either.
   User normal circumstances, a periodic script (cron job) runs to de-activate any user account that remains unverified for more than 2 days, and then will purge the account if it is not rectified within a month.
+
 * The **Level** field will only display options that are within your authority to grant to other users. For example, an Admin is permitted to create *any* level user (including editors and other admins), but an Editor is only permitted to create user-level account (not even other editors). Levels of user accounts may be combined, but there is an implicit hierarchy: Admins need no lower permissions, because they inherit the abilities of the lower levels. Editors do not need to be lower-level Users, because an Editor-level account already includes all those permissions. The only time you really need to combine levels is to offer a combination of editor-level (but not Editor) or user-level accounts (like "Business Office" + "Events Coordinator" or "Member" + "Donor") which may selectively grant the user access to various features on the site.
+
 * **Status** is only occasionally used, for when user accounts require approval before becoming active ("Pending" would be appropriate here), or perhaps your site offers memberships, and you want to "Disable" a user when their subscription lapses, rather than deleting it. Websites need to be specifically coded to use these status levels, as Manifesto does not utilize this field in the core.
+
 * The **Set a cookie...** field indicates that Manifesto should set a cookie to avoid requiring a login upon every return to the site. This is equivalent to the "Remember Me" checkbox sometimes seen on other sites.
+
 * The **Email password to user** is only available wh \\mxzmx.,men setting a new password, and will email a **plain text** copy of the password to the user. They are encouraged to change it again upon loggging in, for security.
 
 The section entitled "Detailed Information" contains additional fields containing more information, such as phone number, alternate email, biography, etc. There is a checkbox labeled **Allow additional personal data to be displayed** — if this checkbox is *not* checked, this additional information will *not* be displayed on the website when using Manifesto's default templates. This rule, however, is only enforced by policy, so when constructing a custom template for displaying users, take care to respect this setting when determining how much user information to display.

@@ -60,9 +60,9 @@ Creating a new page
 
 .. figure:: images/template-pages-custom-fields.*
 
-12. The options available for custom fields is limitless, and could not possibly be covered in this document. But a few examples might help.
+12. The options available for custom fields are limitless, and could not possibly be covered in this document, but a few examples might help.
 
-      * You might, for example, have a series of pages about your numerous office locations. Each one of those pages will need to have a different office address, phone number, and perhaps a map image. While you could simply embed this information in the body field of your page, that means that the formatting (boldface, line breaks, consistency) is left entirely up to you to manage in the WYSIWYG editor. Since we are dealing with consistent, structured data, it would be nice if we could simply create custom fields to request and store this information.
+      * You might, for example, have a series of pages about your various office locations. Each one of those pages will need to have a different office address, phone number, and perhaps a map image. While you could simply embed this information in the body field of your page, that means that the formatting (boldface, line breaks, consistency) is left entirely up to you to manage in the WYSIWYG editor. Since we are dealing with consistent, structured data, it would be nice if we could simply create custom fields to request and store this information.
 
       * In this case, we could use a template with 3 custom fields for our office locations: address (a simple text area), phone number (text input), and a map image (custom image selector). This way we can store (and display) the data consistently, and it also allows us to have the option to make one or more of these fields required, so that we cannot submit the form without completing it. These benefits would not be available if we simply included the information in our body copy.
 

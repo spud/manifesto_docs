@@ -92,32 +92,32 @@ So these are the pieces you combine to build your form. Aside from their field t
 .. figure:: images/formbuilder-field-configure.*
    :align: center
 
-# First, you can create multiple *sections* in your form, simply by adding a section name to your field configuration. Each section is rendered within its own ``fieldset`` element, using the section name as a ``legend`` element. By default, all fields are added to a "Default" section.
+* First, you can create multiple *sections* in your form, simply by adding a section name to your field configuration. Each section is rendered within its own ``fieldset`` element, using the section name as a ``legend`` element. By default, all fields are added to a "Default" section.
 
-# The **Label** for the field should provide the user with a clear definition of the input you are requesting. For simple text inputs, the label defines the input, e.g. "First Name." For a collection of checkboxes, however, the label will cover the collection, e.g. "Hobbies," while the individual checkboxes will have their own labels to describe themselves.
+* The **Label** for the field should provide the user with a clear definition of the input you are requesting. For simple text inputs, the label defines the input, e.g. "First Name." For a collection of checkboxes, however, the label will cover the collection, e.g. "Hobbies," while the individual checkboxes will have their own labels to describe themselves.
 
-# The **Internal field name** is the name actually passed by the form when it is submitted. **The internal field name must be unique within your form, so having two fields with the same internal field name will produce unexpected results.** The internal field name should be a short, URL-friendly formatted description of your content, e.g. "form_hobbies" rather than "form_what_are_your_favorite_hobbies?". The "form_" prefix is used by Manifesto to help distinguish FormBuilder fields from other commonly-used variables in Manifesto like "id" or "function."
+* The **Internal field name** is the name actually passed by the form when it is submitted. **The internal field name must be unique within your form, so having two fields with the same internal field name will produce unexpected results.** The internal field name should be a short, URL-friendly formatted description of your content, e.g. "form_hobbies" rather than "form_what_are_your_favorite_hobbies?". The "form_" prefix is used by Manifesto to help distinguish FormBuilder fields from other commonly-used variables in Manifesto like "id" or "function."
 
-# The checkbox **This field is required** results in the field being tagged with the HTML5 "required" attribute, which means that the form cannot be submitted until a non-empty value is entered. For checkboxes and radio buttons, checking this box will enforce a requirement that *at least one* of the options must be selected in order to submit.
+* The checkbox **This field is required** results in the field being tagged with the HTML5 "required" attribute, which means that the form cannot be submitted until a non-empty value is entered. For checkboxes and radio buttons, checking this box will enforce a requirement that *at least one* of the options must be selected in order to submit.
 
-# The **Placeholder** text uses the HTML "placeholder" attribute to pre-populate the field input with a pre-defined value. This is especially useful when you want to provide your users with an example, or a hint as to the expected format of the response. Placeholder text is generally rendered with faint gray text, and entering text directly into the box immediately overwrites any placeholder. Placeholder text is *never* submitted, even if the input is left empty.
+* The **Placeholder** text uses the HTML "placeholder" attribute to pre-populate the field input with a pre-defined value. This is especially useful when you want to provide your users with an example, or a hint as to the expected format of the response. Placeholder text is generally rendered with faint gray text, and entering text directly into the box immediately overwrites any placeholder. Placeholder text is *never* submitted, even if the input is left empty.
 
-# If you want the field to be pre-populated with a value that *will* be submitted, but can be changed by the user, you may enter it in the **Default value or state** field.
+* If you want the field to be pre-populated with a value that *will* be submitted, but can be changed by the user, you may enter it in the **Default value or state** field.
 
 .. figure:: images/formbuilder-field-configure-advanced.*
    :align: center
 
 On the "Advanced" tab of the configuration options, there are some additional parameters for your form element.
 
-# An **Introductory Text** will appear above your field. You may write as much as you need, and the text will appear below the field label, but above the input element. Useful for providing more detailed instructions on what you are asking of your users.
+* An **Introductory Text** will appear above your field. You may write as much as you need, and the text will appear below the field label, but above the input element. Useful for providing more detailed instructions on what you are asking of your users.
 
-# The **Prefix** and **Suffix** fields can be used to provide small bits of text before and/or after your input. The most common uses of this are for fields expected to contain prices (might use a "$" prefix), and for fields that you want to make clear are optional (might use an "(optional)" suffix.
+* The **Prefix** and **Suffix** fields can be used to provide small bits of text before and/or after your input. The most common uses of this are for fields expected to contain prices (might use a "$" prefix), and for fields that you want to make clear are optional (might use an "(optional)" suffix.
 
-# The **Notes** field is for tooltip-like notes on the content or format of the field. It is typically presented to the user as a small circle-I which, when clicked on, reveals the note.
+* The **Notes** field is for tooltip-like notes on the content or format of the field. It is typically presented to the user as a small circle-I which, when clicked on, reveals the note.
 
-# The **Container Class** and **Element Class** fields allow you to configure your element with custom classes that may be used to style the manner in which they are rendered. The *container class* is assigned to the tag of the element used as a container for the field label, input, options, etc. The *element class* is applied only to the specific element, e.g. the text input field itself, or the individual checkboxes.
+* The **Container Class** and **Element Class** fields allow you to configure your element with custom classes that may be used to style the manner in which they are rendered. The *container class* is assigned to the tag of the element used as a container for the field label, input, options, etc. The *element class* is applied only to the specific element, e.g. the text input field itself, or the individual checkboxes.
 
-# The **Validation Format** menu allows you to add a particular validation check to the input. Selecting "email," for example, will ensure that only a valid email address will be stored in the database.
+* The **Validation Format** menu allows you to add a particular validation check to the input. Selecting "email," for example, will ensure that only a valid email address will be stored in the database.
 
 .. note::
 
