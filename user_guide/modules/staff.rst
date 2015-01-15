@@ -62,7 +62,7 @@ Creating a custom sort order
 
 Templates can obviously be developed to dynamically sort staff profiles based on last name, department, or other properties of the profile, of course. But in the real world, hierarchies and org charts are complex creatures.
 
-When sorting staff profiles, be sure that you are not filtering the listing by any particular category. There is only one sort order for the entire listing, so the only way to ensure that you are accounting for every members sort order is to sort a complete, unfiltered listing.
+When sorting staff profiles, be sure that you are not filtering the listing by any particular category. There is only one sort order for the entire listing, so the only way to ensure that you are accounting for every member's sort order is to sort a complete, unfiltered listing.
 
 Drag the profiles into the desired order. The sort order will be updated on the fly as you manually shuffle the listing, and will give feedback on the completion of the sorting, so take note to allow time for the operation to complete!
 
