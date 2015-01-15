@@ -32,6 +32,7 @@ Contents:
    managing_content
    admin_console
    scenarios
+   troubleshooting
 
 
 ******************
