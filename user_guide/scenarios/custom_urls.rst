@@ -1,5 +1,5 @@
 ****************
-Mega-pages
+Custom URLs
 ****************
 
 Stub
