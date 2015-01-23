@@ -8,7 +8,7 @@ To facilitate clarity when discussing various aspects of Manifesto, this glossar
    :sorted:
 
    **Admin Console**
-      The administrative and site configuration in Manifesto is contained behind another password-protected portal located at http://|yoursite.example.com|/admin. The term *admin console* is generically used to describe that section of the website.
+      The administrative and site configuration in Manifesto is contained behind another password-protected portal located at http://www.example.org/admin. The term *admin console* is generically used to describe that section of the website.
 
    **Cache**
       The *cache* is a data storage system for quickly retrieving information that might be time-intensive to recreate. For example, building a page listing your Board of Directors requires one or more database queries to retrieve the personanel listing, corresponding photos, etc. Since the listing is unlikely to change on a daily basis, it is considered safe to simply store the fully-assembled page for 24 hours, and avoid returning to the database every time the page is requested.
@@ -27,7 +27,7 @@ To facilitate clarity when discussing various aspects of Manifesto, this glossar
       Often referred to simply a *class,* since the PHP class file is what describes the technical implementation of a content type.
 
    **Editor Console**
-      The editorial management of content in Manifesto is contained behind a password-protected portal located at http://|yoursite.example.com|/editor. The term *editor console* is generically used to describe that section of the website.
+      The editorial management of content in Manifesto is contained behind a password-protected portal located at http://www.example.org/editor. The term *editor console* is generically used to describe that section of the website.
 
    **Icon**
       When more than one image is associated with a content object, we may wish to select one of these images to be the official representative photo for the content. Such a selected photo is referred to as the `icon` of the content.

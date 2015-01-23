@@ -200,7 +200,7 @@ Event Locations provide a shorthand way for you to re-use frequently reference v
   :align: center
 
 Editing recurring events
-------------------------
+========================
 
 #. Click the "New event location" link at the bottom of the listing. The basic information about a location is the **Location Name,** the **Address,** and optional **Directions**. The address should be formatted as
 

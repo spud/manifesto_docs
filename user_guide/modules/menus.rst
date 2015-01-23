@@ -47,6 +47,6 @@ Menu items follow the standard Manifesto paradigm for nested sortable lists. Whe
 
  .. note::
 
-  If you suspect that your sort order has become unmanageably corrupted, you can manually request the page ``http://|yoursite.example.com|/editor/MenuItem/index.php?e_section=menus&function=rebuild_tree&id=0``. **This will completely resort your entire set of records,** but will attempt to preserve basic hierarchy (but not ordering) based on the ``parent ID`` property.
+  If you suspect that your sort order has become unmanageably corrupted, you can manually request the page ``http://www.example.org/editor/MenuItem/index.php?e_section=menus&function=rebuild_tree&id=0``. **This will completely resort your entire set of records,** but will attempt to preserve basic hierarchy (but not ordering) based on the ``parent ID`` property.
 
 

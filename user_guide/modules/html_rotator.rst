@@ -7,7 +7,7 @@ The HTML Rotator module creates custom slideshows that combine images and HTML t
 
 2. The **HTML Rotator Slides**, which are the individual elements in the rotator.
 
-The only rotator in use on http://|yoursite.example.com|/ is hard-coded into the home page template. It is used to display important announcements or information that may need to be updated frequently.
+The only rotator in use on http://www.example.org/ is hard-coded into the home page template. It is used to display important announcements or information that may need to be updated frequently.
 
 There is no limit to the number of slides you may have in a rotator, though they do all occupy a certain amount of memory, and can slow down page loads. 1-6 is the usual range.
 
