@@ -6,7 +6,6 @@ The FormBuilder module is a powerful, easy-to-use way to create custom forms to 
 
 .. figure:: images/formbuilder-components.*
    :align: right
-   :width: 110px
 
 Building a form is as simple as dragging and dropping the various components into place, and configuring them with a name, label, custom values, etc. The FormBuilder module supports default values, placeholder text, introductory copy, popup help text, and other detailed features that give you control over your forms.
 
