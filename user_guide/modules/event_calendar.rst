@@ -44,9 +44,9 @@ Creating a new event
 
 2. Like most Manifesto content, Calendar Events can tap into the powerful category system, allowing various associations and classifications to be attached to an event. Here we see that the "Base" category group is enabled for Calendar Events, so you can use the same categories for events that are used for photo galleries or blog posts.
 
-.. figure:: images/eventcal-event-edit-1.*
-   :width: 600 px
-   :align: center
+   .. figure:: images/eventcal-event-edit-1.*
+      :width: 600 px
+      :align: center
 
    The **Title** field holds the main identifier for the event, which will appear in most calendar views. Titles can be up to 255 characters long, but bear in mind that in some views, such a long title can render the view illegible. So try to be pithy but descriptive in naming your event.
 
