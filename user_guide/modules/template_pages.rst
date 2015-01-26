@@ -65,7 +65,7 @@ Creating a new page
    .. figure:: images/template-pages-custom-fields.*
       :width: 40%
       :align: right
-      :target: images/template-pages-custom-fields.png
+      :target: ./images/template-pages-custom-fields.png
 
    * You might, for example, have a series of pages about your various office locations. Each one of those pages will need to have a different office address, phone number, and perhaps a map image. While you could simply embed this information in the body field of your page, that means that the formatting (boldface, line breaks, consistency) is left entirely up to you to manage in the WYSIWYG editor. Since we are dealing with consistent, structured data, it would be nice if we could simply create custom fields to request and store this information.
 

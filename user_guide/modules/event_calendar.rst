@@ -149,7 +149,7 @@ Let us take each time frame in order, and examine the options.
    .. figure:: images/eventcal-event-edit-monthly.*
       :align: center
       :scale: 50
-      :target: images/eventcal-event-edit-monthly.png
+      :target: ./images/eventcal-event-edit-monthly.png
 
    For events that recur on a monthly basis, the available options are more complex. Sometimes, for example an event is on the 3rd of the month every month. Sometimes it's on the first Friday of the month, no matter the date. And sometimes it's on the last day of the month, no matter which month.
 
@@ -206,13 +206,13 @@ Editing recurring events
    .. figure:: images/eventcal-event-location-edit-1.*
       :align: center
       :scale: 50
-      :target: images/eventcal-event-location-edit-1.png
+      :target: ./images/eventcal-event-location-edit-1.png
 
 #. The second part of the location is entirely optional, but gives you the opportunity to enter a contact name, email, and phone number, as well as providing a field for a URL that may be associated with the location. The **Contact Email** field should contain only a valid email address, and it will be converted to a clickable link. Similarly, the **Location URL** field should contain only a web address, and it will automatically be made into a link.
 
    .. figure:: images/eventcal-event-location-edit-2.*
      :align: center
      :scale: 50
-     :target: images/eventcal-event-location-edit-2.png
+     :target: ./images/eventcal-event-location-edit-2.png
 
 #. Once you have submitted the Event Location, it will automatically become available for use by the Calendar Event editing form, allowing you to simply select your new location from a drop-down menu.

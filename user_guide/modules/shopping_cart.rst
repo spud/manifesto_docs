@@ -73,7 +73,7 @@ The Editor can change the Transaction status here, as well, to indicate the curr
 * Received: *Transaction was successful, and is ready for fulfillment*
 * Being Processed: *Transaction is being fulfilled internally*
 * Needs Shipping: *Transaction is ready to be shipped out*
-* Delayed: *Transaction successful, but fulfillment delayed *
+* Delayed: *Transaction successful, but fulfillment delayed*
 * Paritally Shipped: *Some items have already been shipped*
 * Fulfilled: *Transaction fully complete, and shipped if needed*
 * Failed: *Transaction failed. Details usually provided by processor*

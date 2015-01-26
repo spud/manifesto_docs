@@ -10,19 +10,19 @@ For the most part, all of the Editor Console pages follow a consistent format, a
    .. figure:: images/editor-view-listing.*
       :width: 800 px
       :height: 400 px
-      :target: images/editor-view-listing.png
+      :target: ./images/editor-view-listing.png
 
 - Editing pages, where a form is presented to create or edit a new content object
    .. figure:: images/editor-view-editing.*
       :width: 800 px
       :height: 400 px
-      :target: images/editor-view-editing.*
+      :target: ./images/editor-view-editing.*
 
 - Display pages, where rendered output from your content is displayed for your reference
    .. figure:: images/editor-view-display.*
       :width: 800 px
       :height: 400 px
-      :target: images/editor-view-display.*
+      :target: ./images/editor-view-display.*
 
 
 Media Browser
@@ -31,8 +31,8 @@ Media Browser
 The Media Browser is one of the most powerful tools in Manifesto. All image uploads, media files, PDFs and downloadable files are stored consistently, and with a full set of metadata for characterizing your uploads, from title and caption to keywords and taxonomies. This makes all of your uploaded files easy to find, and reusable across your entire website.
 
 .. figure:: images/media-browser-gallery.*
-  :width: 600 px
-  :height: 486 px
+   :width: 600 px
+   :height: 486 px
 
 The uniform handling of file uploads also allows Manifesto to ensure rigorous validation and sanitization of user-contributed files, to keep you safe from malicious hacking attempts.
 
@@ -43,7 +43,7 @@ Most of the time, when you need to upload a file to Manifesto -- whether embeddi
 The interface is simple:
 
 .. figure:: images/media-browser-upload.*
-  :width: 600 px
+   :width: 600 px
 
 Simply drag one or more images, audio files, PDFs, Word documents, or other media onto the target zone indicated by the grey area. For backwards compatibility, you may also click anywhere on the area to bring up a standard file selection box to locate and upload a file from your computer.
 
@@ -62,7 +62,7 @@ By clicking on any file in the repository grid, details about that file will app
 From the repository grid view, you can click on an image, and then click the "Use Selected Media" button to insert it into your content. If you click on an image while holding down the ALT key (Command on a Mac), you can select more than one file at a time to place (each selected image will appear semi-opaque). When you click "Use Selected Media" each of the media will be attached to your content in turn.
 
 .. figure:: images/media-browser-gallery-multiple.*
-  :width: 600 px
+   :width: 600 px
 
 .. note::
 
@@ -71,15 +71,15 @@ From the repository grid view, you can click on an image, and then click the "Us
 Options when inserting media
 ----------------------------
 .. figure:: images/media-instance-highlighted.*
-  :width: 50%
-  :align: right
+   :width: 50%
+   :align: right
 
 After placing the media within your content, **you will notice that it only appears as a square placeholder.** This is intentional, to preserve space within the editor, but your image will ultimately be displayed on the page with the parameters you specify.
 
 Clicking once on the placeholder image reveals an overlay with two icons: one to delete the image, and one to edit the properties of the media for this specific instance.
 
 .. figure:: images/media-instance-options.*
-  :width: 50%
+   :width: 50%
 
    The interface for specifying details of media usage
 
@@ -156,7 +156,7 @@ To **add a new Category Group,** from the listing page, click "New Category Grou
 To **add a new Category,** from the Category Groups listing page, you may click on the "Add" button within an existing category group. As an alternative, from the "List" page of a particular category group, there is always a "New Category" link at the bottom of the list of existing categories.
 
 .. figure:: images/category-edit.*
-  :alt: Interface for adding a category
+   :alt: Interface for adding a category
 
   Adding a new category
 
