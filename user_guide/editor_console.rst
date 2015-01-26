@@ -144,7 +144,7 @@ Within a Category Group, individual categories are created, and can be organized
 To **add a new Category Group,** from the listing page, click "New Category Group." You are prompted for only a few pieces of information
 
 .. figure:: images/category-group-edit.*
-  :alt: Interface for adding a category group
+   :alt: Interface for adding a category group
 
   Adding a new category group
 
@@ -158,7 +158,7 @@ To **add a new Category,** from the Category Groups listing page, you may click 
 .. figure:: images/category-edit.*
    :alt: Interface for adding a category
 
-  Adding a new category
+   Adding a new category
 
 Adding a category is straightforward:
 

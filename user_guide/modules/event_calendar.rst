@@ -172,7 +172,7 @@ Returning later to re-edit events created by a recurrence rule can be complicate
 When you edit an existing event that occurs as part of a recurring series, you are given the option seen below:
 
 .. figure:: images/eventcal-event-edit-affect.*
-  :align: center
+   :align: center
 
 This allows you to select whether or not to edit solely this occurrence, or to affect change in all future occurrences as well. If you opt to *edit only this recurrence,* the behavior is obvious. If you opt, however, to *update all recurrences,* the results can be slightly more complicated. Given a brand new series of recurrences, never modified, you can update any property in the series all by editing the parent. If any of the recurrences have been individually modified, however, they will *not* be updated, for reasons clarified in the following note.
 
@@ -191,7 +191,7 @@ Event Locations
 Event Locations provide a shorthand way for you to re-use frequently reference venues for your locations. They can store location names, address, directions, contact info, a URL, and even images. Using event locations helps maintain a consistent, reliable record of information related to your event venues, and saves time when creating events.
 
 .. figure:: images/eventcal-event-location-listing.*
-  :align: center
+   :align: center
 
 Editing recurring events
 ========================
