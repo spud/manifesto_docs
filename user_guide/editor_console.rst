@@ -146,7 +146,7 @@ To **add a new Category Group,** from the listing page, click "New Category Grou
 .. figure:: images/category-group-edit.*
    :alt: Interface for adding a category group
 
-  Adding a new category group
+   Adding a new category group
 
 * **Category Group** - the name of the collection
 * **Shortname** - a URL-friendly version of the group name
@@ -158,7 +158,7 @@ To **add a new Category,** from the Category Groups listing page, you may click 
 .. figure:: images/category-edit.*
    :alt: Interface for adding a category
 
-   Adding a new category
+    Adding a new category
 
 Adding a category is straightforward:
 
