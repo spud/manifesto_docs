@@ -40,19 +40,18 @@ The "iCalendar" tab triggers the generation of an icalendar-formatted .ics file 
 Creating a new event
 ====================
 
-1. To create a new event, click the "New Event" link that appears at the bottom of the event listing page.
+#. To create a new event, click the "New Event" link that appears at the bottom of the event listing page.
 
-2. Like most Manifesto content, Calendar Events can tap into the powerful category system, allowing various associations and classifications to be attached to an event. Here we see that the "Base" category group is enabled for Calendar Events, so you can use the same categories for events that are used for photo galleries or blog posts.
+#. Like most Manifesto content, Calendar Events can tap into the powerful category system, allowing various associations and classifications to be attached to an event. Here we see that the "Base" category group is enabled for Calendar Events, so you can use the same categories for events that are used for photo galleries or blog posts.
 
    .. figure:: images/eventcal-event-edit-1.*
-      :width: 600 px
       :align: center
 
    The **Title** field holds the main identifier for the event, which will appear in most calendar views. Titles can be up to 255 characters long, but bear in mind that in some views, such a long title can render the view illegible. So try to be pithy but descriptive in naming your event.
 
    .. figure:: images/eventcal-event-date-picker.*
+      :scale: 50
       :align: right
-      :scale: 50 %
 
    The **Event Date** field is the start date for the event. You can select from the menus, or click the date picker icon for a popup, visual view for selecting the date.
 
@@ -62,17 +61,17 @@ Creating a new event
 
       While Manifesto does not currently allow the creation of events that span multiple days, it is smart enough to understand that an end time ("2am") that is *earlier* than the start time ("10pm") means that the event crosses over midnight into the next day. When this situation arises, it will display the time range like "10pm - 2am (next day)".
 
-3. The second part of the form provides ample room for you to write a lengthy descriptions, and even to upload photos or other related documents. The **Description** field should be used to provide more information, and can be used as a location to include anything not covered by the existing fields.
+#. The second part of the form provides ample room for you to write a lengthy descriptions, and even to upload photos or other related documents. The **Description** field should be used to provide more information, and can be used as a location to include anything not covered by the existing fields.
 
    .. figure:: images/eventcal-event-edit-2.*
-      :width: 600 px
       :align: center
 
-4. The **Location** menu gives you the ability to select from a predefined list of locations (see the :ref:`class-event-location` section below) created elsewhere. If your desired venue is not listed there, you may select "Other Location" and provide your own *Name* and *Directions* to the facility. Manifesto will use that information to create an ad-hoc EventLocation object to represent that location when displaying the event.
+#. The **Location** menu gives you the ability to select from a predefined list of locations (see the :ref:`class-event-location` section below) created elsewhere. If your desired venue is not listed there, you may select "Other Location" and provide your own *Name* and *Directions* to the facility. Manifesto will use that information to create an ad-hoc EventLocation object to represent that location when displaying the event.
 
-5. The **Status** menu allows you to set the status of your event:
+#. The **Status** menu allows you to set the status of your event:
 
    .. figure:: images/eventcal-event-status.*
+      :scale: 40
       :align: right
 
    * *Pending* events do not appear on the calendar until approved by an editor.
@@ -86,7 +85,7 @@ Creating a new event
 
    <div style="clear:both;margin-top:2em;">
 
-6. While this much information is usually suitable for describing most events, there are some additional fields that are available for your use. These are:
+#. While this much information is usually suitable for describing most events, there are some additional fields that are available for your use. These are:
 
 
    * Notes, where you can enter formatted text and links. Since the description field contains most of the information about the event, this is a convenient place to store additional information of any sort.
@@ -110,20 +109,13 @@ The ability to quickly produce a series of events that recur on a regular schedu
 
 Events can be configured to repeat daily, weekly, monthly, or annually, with flexible configuration for each of these options.
 
-
-.. raw:: html
-
-   <div style="width:40%;float:right;">
-
 .. figure:: images/eventcal-event-edit-endon.*
-   :align: center
+   :align: right
+   :width: 40%
 
 .. figure:: images/eventcal-event-edit-enddate.*
-   :align: center
-
-.. raw:: html
-
-   </div>
+   :align: right
+   :width: 40%
 
 You can specify an end date for your recurrences, or simply have it stop repeating after *n* occurrences. This specification is common to all recurring events, and the interface is straightforward. If you want your event to occur 5 times, select "End after a number of recurrences" and enter "5" in the **Count** field. Similarly, if you select "End on a particular date," the interface changes to reveal a menu and date picker that allows you to choose the end date for your recurrences. If you want your event to repeat "until the end of the year," simply choose December 31 of the current year from the date picker under "End Date." Even if your event will end on December 29, for example, because of the recurrence rules, setting the end date to an inexact later date will still have the desired effect.
 
@@ -156,6 +148,8 @@ Let us take each time frame in order, and examine the options.
 
    .. figure:: images/eventcal-event-edit-monthly.*
       :align: center
+      :scale: 50
+      :target: images/eventcal-event-edit-monthly.png
 
    For events that recur on a monthly basis, the available options are more complex. Sometimes, for example an event is on the 3rd of the month every month. Sometimes it's on the first Friday of the month, no matter the date. And sometimes it's on the last day of the month, no matter which month.
 
@@ -203,20 +197,22 @@ Editing recurring events
 ========================
 
 #. Click the "New event location" link at the bottom of the listing. The basic information about a location is the **Location Name,** the **Address,** and optional **Directions**. The address should be formatted as
-
    | *Street Address*
    | *Street Address cont (optional)*
    | *City State ZIP*
    | *Country (optional)*
-
    and ideally should conform to a format that can easily be interpreted by Google Maps or other software to provide a map-based view of the location.
 
    .. figure:: images/eventcal-event-location-edit-1.*
-     :align: center
+      :align: center
+      :scale: 50
+      :target: images/eventcal-event-location-edit-1.png
 
 #. The second part of the location is entirely optional, but gives you the opportunity to enter a contact name, email, and phone number, as well as providing a field for a URL that may be associated with the location. The **Contact Email** field should contain only a valid email address, and it will be converted to a clickable link. Similarly, the **Location URL** field should contain only a web address, and it will automatically be made into a link.
 
    .. figure:: images/eventcal-event-location-edit-2.*
      :align: center
+     :scale: 50
+     :target: images/eventcal-event-location-edit-2.png
 
 #. Once you have submitted the Event Location, it will automatically become available for use by the Calendar Event editing form, allowing you to simply select your new location from a drop-down menu.

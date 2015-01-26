@@ -10,25 +10,29 @@ For the most part, all of the Editor Console pages follow a consistent format, a
    .. figure:: images/editor-view-listing.*
       :width: 800 px
       :height: 400 px
-      :scale: 50 %
+      :target: images/editor-view-listing.png
+
 - Editing pages, where a form is presented to create or edit a new content object
    .. figure:: images/editor-view-editing.*
       :width: 800 px
       :height: 400 px
-      :scale: 50 %
+      :target: images/editor-view-editing.*
+
 - Display pages, where rendered output from your content is displayed for your reference
    .. figure:: images/editor-view-display.*
       :width: 800 px
       :height: 400 px
-      :scale: 50 %
+      :target: images/editor-view-display.*
+
 
 Media Browser
 =============
+
+The Media Browser is one of the most powerful tools in Manifesto. All image uploads, media files, PDFs and downloadable files are stored consistently, and with a full set of metadata for characterizing your uploads, from title and caption to keywords and taxonomies. This makes all of your uploaded files easy to find, and reusable across your entire website.
+
 .. figure:: images/media-browser-gallery.*
   :width: 600 px
   :height: 486 px
-
-The Media Browser is one of the most powerful tools in Manifesto. All image uploads, media files, PDFs and downloadable files are stored consistently, and with a full set of metadata for characterizing your uploads, from title and caption to keywords and taxonomies. This makes all of your uploaded files easy to find, and reusable across your entire website.
 
 The uniform handling of file uploads also allows Manifesto to ensure rigorous validation and sanitization of user-contributed files, to keep you safe from malicious hacking attempts.
 
@@ -67,8 +71,7 @@ From the repository grid view, you can click on an image, and then click the "Us
 Options when inserting media
 ----------------------------
 .. figure:: images/media-instance-highlighted.*
-  :width: 652 px
-  :height: 407 px
+  :width: 50%
   :align: right
 
 After placing the media within your content, **you will notice that it only appears as a square placeholder.** This is intentional, to preserve space within the editor, but your image will ultimately be displayed on the page with the parameters you specify.
@@ -76,6 +79,7 @@ After placing the media within your content, **you will notice that it only appe
 Clicking once on the placeholder image reveals an overlay with two icons: one to delete the image, and one to edit the properties of the media for this specific instance.
 
 .. figure:: images/media-instance-options.*
+  :width: 50%
 
    The interface for specifying details of media usage
 
@@ -140,7 +144,9 @@ Within a Category Group, individual categories are created, and can be organized
 To **add a new Category Group,** from the listing page, click "New Category Group." You are prompted for only a few pieces of information
 
 .. figure:: images/category-group-edit.*
-  :width: 600 px
+  :alt: Interface for adding a category group
+
+  Adding a new category group
 
 * **Category Group** - the name of the collection
 * **Shortname** - a URL-friendly version of the group name
@@ -150,7 +156,9 @@ To **add a new Category Group,** from the listing page, click "New Category Grou
 To **add a new Category,** from the Category Groups listing page, you may click on the "Add" button within an existing category group. As an alternative, from the "List" page of a particular category group, there is always a "New Category" link at the bottom of the list of existing categories.
 
 .. figure:: images/category-edit.*
-  :width: 600 px
+  :alt: Interface for adding a category
+
+  Adding a new category
 
 Adding a category is straightforward:
 
@@ -170,7 +178,6 @@ WYSIWYG Editor
 ==============
 
 .. figure:: images/tinymce.*
-  :width: 600 px
 
 The WYSIWYG editor in Manifesto is a slightly modified version of TinyMCE, a popular editor found in many CMS applications. For the most part, the buttons in the toolbar are self-explanatory, and generally behave the way such buttons operate in word processors like Microsoft Word.
 
@@ -193,7 +200,6 @@ Creating Links
 Creating links in the editor is easy. Simply type the text you want to appear as a link, and use your mouse to select it. Then click on the "Create link" icon (a small chain link), and a new window will popup.
 
 .. figure:: images/tinymce-link.*
-  :width: 600 px
 
 * To create a simple link to an external website, you can simply enter the URL in the "URL Path" field and submit.
 

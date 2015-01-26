@@ -29,6 +29,7 @@ Privileges can be granted to user roles only on a module-by-module basis. You ca
 * Delete (this role can **delete** and **purge** any content within this module)
 
 .. figure:: images/role_permissions.*
+   :alt: Role permissions grid
 
    Example permissions for the Editor role
 
@@ -57,7 +58,7 @@ An user with only an "Editor" level role can only create less-powerful users (e.
 * **First Name** and **Last Name** should be self-explanatory
 * **Display Name** is the name used for bylines on the website. It could be a full name, nickname, or other pseudonym.
 * **Email** is a required field, and the address entered is normally used to send a confirmation email in order the verify the account.
-* ##Email Verification##: As was just stated, Manifesto uses a confirmation email to verify that the email address associated with your account is valid. This provides a bare minimum guarantee of accountability, since we can at least confirm that we have a means for contacting the user associated with the account.
+* **Email Verification**: As was just stated, Manifesto uses a confirmation email to verify that the email address associated with your account is valid. This provides a bare minimum guarantee of accountability, since we can at least confirm that we have a means for contacting the user associated with the account.
   This field is set to "Unverified" for all new users. When set to "unverified," a random key is stored in the database, and an email is automatically sent to the email address entered. The email body contains a link that corresponds to the random key, and when the user clicks on the email link, the key is erased and the user is marked as "Verified."
   An editor or administrator can automatically set the status to "Verified," if they are sure the email address is valid.
   Setting the status of this field to "Not requested" lies directly in-between — the user is not considered "unverified," but it cannot be assumed that the user has a confirmed email address either.

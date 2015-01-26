@@ -5,7 +5,7 @@ The Registrations module was developed specifically in response to the complex o
 
 For example, you might have a "Diversity Conference" (a Registration) that is broken down into "Morning Track" (a Unit Group) and "Afternoon Track" (a Unit Group). Each of those tracks have 2 workshops, "Understanding Diversity" (a Registration Unit), and "Diversity in the Workplace" (a Registration unit).
 
-Prices can be attached to Registration Units, allowing them to be added to a shopping cart for checkout just like any other purchaseable item.
+Prices can be attached to Registration Units, allowing them to be added to a shopping cart for checkout just like any other purchasable item.
 
 Creating a new registration
 ===========================
@@ -34,7 +34,7 @@ If you intend to charge money for the registration, and have properly configured
 
 .. figure:: images/registrations-unit-sales.*
 
-Here you specify the shopping cart item that corresponds to your Registration Unit. It can have a different title than the Registration Unit (which appears in the Shopping Cart), and has all the flexible options of any purchaseable item in Manifesto.
+Here you specify the shopping cart item that corresponds to your Registration Unit. It can have a different title than the Registration Unit (which appears in the Shopping Cart), and has all the flexible options of any purchasable item in Manifesto.
 
 When you edit a Regsistration object, you will also see all the existing associated Registration Units, and can edit and delete them as needed. But because each Registration Unit is its own content type, there is a "Registration Units" tab in the module interface.
 

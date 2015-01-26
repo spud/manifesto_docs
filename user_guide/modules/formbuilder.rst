@@ -6,6 +6,8 @@ The FormBuilder module is a powerful, easy-to-use way to create custom forms to 
 
 .. figure:: images/formbuilder-components.*
    :align: right
+   :width: 25%
+   :alt: FormBuilder element selector
 
 Building a form is as simple as dragging and dropping the various components into place, and configuring them with a name, label, custom values, etc. The FormBuilder module supports default values, placeholder text, introductory copy, popup help text, and other detailed features that give you control over your forms.
 
@@ -90,6 +92,8 @@ So these are the pieces you combine to build your form. Aside from their field t
 
 .. figure:: images/formbuilder-field-configure.*
    :align: center
+   :scale: 75
+   :target: images/formbuilder-field-configure.png
 
 * First, you can create multiple *sections* in your form, simply by adding a section name to your field configuration. Each section is rendered within its own ``fieldset`` element, using the section name as a ``legend`` element. By default, all fields are added to a "Default" section.
 
@@ -105,6 +109,8 @@ So these are the pieces you combine to build your form. Aside from their field t
 
 .. figure:: images/formbuilder-field-configure-advanced.*
    :align: center
+   :scale: 75
+   :target: images/formbuilder-field-configure-advanced.png
 
 On the "Advanced" tab of the configuration options, there are some additional parameters for your form element.
 
