@@ -158,7 +158,7 @@ To **add a new Category,** from the Category Groups listing page, you may click 
 .. figure:: images/category-edit.*
    :alt: Interface for adding a category
 
-    Adding a new category
+   Adding a new category
 
 Adding a category is straightforward:
 
