@@ -62,11 +62,11 @@ Creating a new page
 
 12. The options available for custom fields are limitless, and could not possibly be covered in this document, but a few examples might help.
 
-      * You might, for example, have a series of pages about your various office locations. Each one of those pages will need to have a different office address, phone number, and perhaps a map image. While you could simply embed this information in the body field of your page, that means that the formatting (boldface, line breaks, consistency) is left entirely up to you to manage in the WYSIWYG editor. Since we are dealing with consistent, structured data, it would be nice if we could simply create custom fields to request and store this information.
+    * You might, for example, have a series of pages about your various office locations. Each one of those pages will need to have a different office address, phone number, and perhaps a map image. While you could simply embed this information in the body field of your page, that means that the formatting (boldface, line breaks, consistency) is left entirely up to you to manage in the WYSIWYG editor. Since we are dealing with consistent, structured data, it would be nice if we could simply create custom fields to request and store this information.
 
-      * In this case, we could use a template with 3 custom fields for our office locations: address (a simple text area), phone number (text input), and a map image (custom image selector). This way we can store (and display) the data consistently, and it also allows us to have the option to make one or more of these fields required, so that we cannot submit the form without completing it. These benefits would not be available if we simply included the information in our body copy.
+    * In this case, we could use a template with 3 custom fields for our office locations: address (a simple text area), phone number (text input), and a map image (custom image selector). This way we can store (and display) the data consistently, and it also allows us to have the option to make one or more of these fields required, so that we cannot submit the form without completing it. These benefits would not be available if we simply included the information in our body copy.
 
-      * Another common use of custom fields might be used by a custom template designed to display an embedded form created by the FormBuilder module. In this case, you would simply be presented with a drop-down menu that would allow you to select which form to embed on the page. The template itself -- created by a developer -- would contain all the markup and logic to handle processing the form submission.
+    * Another common use of custom fields might be used by a custom template designed to display an embedded form created by the FormBuilder module. In this case, you would simply be presented with a drop-down menu that would allow you to select which form to embed on the page. The template itself -- created by a developer -- would contain all the markup and logic to handle processing the form submission.
 
 13. The `Editor Display` page that you usually see after submitting an editing form in the Editor Console is not designed to display the content in the proper context of the front-end display, so it can be difficult to envisage the front-end layout. To give you a better indication of what your content will look like on the public site, there is a `Preview` button at the bottom of the form. Clicking this will attempt to display your current page within the context of front-end stylesheets and layouts without actually finalizing the saving of your data.
 
@@ -78,7 +78,7 @@ Moving a page
 ===================
 There are two ways to alter the location of a template page on your site:
 
-   1. From the listing page, you can click on the dotted bar on the left-hand edge of a row to drag that page *and all of its descendants* to a new position. Manifesto will reorganize all of your pages to accomodate the new position.
+   #. From the listing page, you can click on the dotted bar on the left-hand edge of a row to drag that page *and all of its descendants* to a new position. Manifesto will reorganize all of your pages to accomodate the new position.
 
-   2. From the editing form of a specific page, you can select a new `parent` and `position` value from their respective menus. After submitting the form, the current page *and all of its descendents* will be re-ordered to their new location.
+   #. From the editing form of a specific page, you can select a new `parent` and `position` value from their respective menus. After submitting the form, the current page *and all of its descendents* will be re-ordered to their new location.
 
