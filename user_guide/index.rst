@@ -13,7 +13,8 @@ Introduction
 
 .. figure:: images/manifesto-bubble-logo.*
    :align: right
-   :width: 200 px
+   :width: 400 px
+   :scale: 50
    :alt: Manifesto logo
 
 Manifesto is a Content Management System (CMS) that uses an object-oriented system to manage complex structured data and to render that content, whether as web pages, RSS reeds, iCalendar output, or a web service API to name just a few examples.

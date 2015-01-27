@@ -43,10 +43,10 @@ Creating a new page
 
    .. figure:: images/template-pages-title-field.*
 
-#. The URL path allows you to customize the path for the current page. If you leave this field blank, the default URL struture is
+#. The URL path allows you to customize the path for the current page. If you leave this field blank, the default URL structure is
    ``http://www.example.org/mod/template_pages/[parent-shortname]/[page-shortname]/index.php``
 
-    You can create a custom URL for your content by entering it here. *Leave out the default site URL, and enter only a relative path here.*
+   You can create a custom URL for your content by entering it here. *Leave out the default site URL, and enter only a relative path here.*
 
 #. The `Display` checkbox governs whether or not the page will appear on the front end  of the site for the public. You can enable/disable display of this page on the site by toggling this checkbox.
 
