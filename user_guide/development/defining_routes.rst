@@ -29,13 +29,13 @@ We would create a route map element that looks like this::
 		'id'=>get_segment(2)
 	);
 
-And after being processed, we now have
+And after being processed, we now have ::
 
-$G->handler = 'module';
-$G->req_module = 'media';
-$G->category->shortname = 'landscapes';
-$G->req_function = 'display';
-$G->req_id = 'ocean-view-with-sunset';
+	$G->handler = 'module';
+	$G->req_module = 'media';
+	$G->category->shortname = 'landscapes';
+	$G->req_function = 'display';
+	$G->req_id = 'ocean-view-with-sunset';
 
 With that, the ``index.php`` page now has the information it needs to route the page to the appropriate module controller.
 
@@ -47,9 +47,9 @@ You'll note that the index.php page contains no HTML markup. No output occurs un
 
 Creating a custom route
 =======================
-If you want to create systematic shortcut URLs (rather than one-off custom URLs), you can achieve this with a custom route. For example, imagine that your website has a categorized staff directory, so that filtered views adapt a URL something like
+If you want to create systematic shortcut URLs (rather than one-off custom URLs), you can achieve this with a custom route. For example, imagine that your website has a categorized staff directory, so that filtered views adapt a URL something like ::
 
-``/mod/staff/listing/index.php?category=board-of-directors``
+   /mod/staff/listing/index.php?category=board-of-directors
 
 You would like a shorter solution that works with any category, so you create a route like::
 
@@ -60,15 +60,15 @@ You would like a shorter solution that works with any category, so you create a 
 		'category'=>get_segment(1)
 	);
 
-...and that will allow you to use the much shorter
+...and that will allow you to use the much shorter ::
 
-``/s/board-of-directors``
+   /s/board-of-directors
 
 to reach the same page. You are basically telling Manifesto that, if the *trigger* is ``s``, then treat the next segment of the URL as the category, and assume that this is for the Staff moodule and that you want to call the ``listing`` function in the controller.
 
-You may notice that that was a very specific use-case. Because we hard-coded "listing" as the function being requested, that means that we cannot use a URL like
+You may notice that that was a very specific use-case. Because we hard-coded "listing" as the function being requested, that means that we cannot use a URL like ::
 
-``/s/a-different-function/board-of-directors``
+   /s/a-different-function/board-of-directors
 
 because we have very specifically redefined the meaning of each segment of the URL, and none of the segments are configured to define the *function*.
 
@@ -93,13 +93,12 @@ You could modify the "URL Path" property of the Module definition, but you would
 		'xparam2'=>get_segment(3),
 	);
 
-By using a relatively generic route definition like this, it ensures that all of the functionality that worked with
+By using a relatively generic route definition like this, it ensures that all of the functionality that worked with ::
 
-``/mod_shopping_cart/``
+   /mod_shopping_cart/
 
-will now work with
+will now work with ::
 
-``/store``
+   /store
 
 instead.
-

@@ -83,9 +83,9 @@ In cases where you do want control over the update process, there is a "set_clau
 	$oracle->set_where_clause("mime_type = 'x-application'");
 	$oracle->update();
 
-This would produce a query like
+This would produce a query like ::
 
-``UPDATE media SET mime_type = 'application' WHERE mime_type = 'x-application';``
+   UPDATE media SET mime_type = 'application' WHERE mime_type = 'x-application';
 
 **BUT I WANT TO DO ANYTHING I WANT!**
 
@@ -110,9 +110,9 @@ If you need to perform a similar query, but on a field other than the objectid f
 	$oracle = new MediaOracle();
 	$object = $oracle->get_unique('My First Picture','title');
 
-While Manifesto is largely designed to identify unique records based on ID numbers, this extended functionality accomodates the uses of longer, text-based identifiers fre-quently seen in blog entries and other search-engine-optimized URLS like:
+While Manifesto is largely designed to identify unique records based on ID numbers, this extended functionality accomodates the uses of longer, text-based identifiers fre-quently seen in blog entries and other search-engine-optimized URLS like::
 
-``http://www.example.com/blog/my-long-blog-title-about-whatever``
+   http://www.example.com/blog/my-long-blog-title-about-whatever
 
 To cover the possibility of errors, the complete code sequence would look something like this::
 
@@ -158,23 +158,23 @@ and you would receive an array of results. However, the number of results would 
 
 So you would have, for example,
 
-==  =====   ====    ====        ========
+==  =====   ====    ==========  ========
 ID	First	Last	Pref		Value
-==  =====   ====    ====        ========
+==  =====   ====    ==========  ========
 12  John    Doe	    last_login	01/01/09
 12  John    Doe	    user_type	Editor
 12  John    Doe	    eyes		Blue
 15  Susan   Smith   last_login	12/31/08
 15  Susan   Smith   user_type	User
-==  =====   ====    ====        ========
+==  =====   ====    ==========  ========
 
 Ganging Results
 ===============
-This multiple-rows-per-person format can be somewhat inconvenient to work with when you are looping through the results and hope to have each iteration correspond to a sin-gle person.
+This multiple-rows-per-person format can be somewhat inconvenient to work with when you are looping through the results and hope to have each iteration correspond to a single person.
 
-To handle situations like this, the generic Oracle class includes a "gangby" property. If you set
+To handle situations like this, the generic Oracle class includes a "gangby" property. If you set ::
 
-``$oracle->set_gangby('id');``
+   $oracle->set_gangby('id');
 
 Then the results are returned to you as an array of arrays -- the outermost array corre-sponds to a single ID number (and therefore to a single person), and its contents are an array, each element of which is one of the rows corresponding to that user.
 
@@ -215,15 +215,15 @@ The query above, re-written as a left join, would look like this::
 
 and the results might look like this:
 
-==  =====   ====    ====        ========
+==  =====   ======  ==========  ========
 ID	First	Last	Pref		Value
-==  =====   ====    ====        ========
+==  =====   ======  ==========  ========
 12  John    Doe	    last_login	01/01/09
 12  John    Doe	    user_type	Editor
 12  John    Doe	    eyes		Blue
 15  Susan   Smith   last_login	12/31/08
 15  Susan   Smith   user_type	User
 16	Bob	    Barker  NULL        NULL
-==  =====   ====    ====        ========
+==  =====   ======  ==========  ========
 
 because the user whose ID is 16 has no preferences set in the user_prefs table.

@@ -8,5 +8,5 @@ The following pages are for advanced users, and explain some of the inner workin
    :maxdepth: 2
 
    development/filesystem
-   development/routes
+   development/defining_routes
    development/writing_queries
