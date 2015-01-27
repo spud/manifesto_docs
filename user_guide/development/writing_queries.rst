@@ -159,13 +159,13 @@ and you would receive an array of results. However, the number of results would 
 So you would have, for example,
 
 ==  =====   ====    ==========  ========
-ID	First	Last	Pref		Value
+ID  First   Last    Pref        Value
 ==  =====   ====    ==========  ========
-12  John    Doe	    last_login	01/01/09
-12  John    Doe	    user_type	Editor
-12  John    Doe	    eyes		Blue
-15  Susan   Smith   last_login	12/31/08
-15  Susan   Smith   user_type	User
+12  John    Doe     last_login  01/01/09
+12  John    Doe     user_type   Editor
+12  John    Doe     eyes        Blue
+15  Susan   Smith   last_login  12/31/08
+15  Susan   Smith   user_type   User
 ==  =====   ====    ==========  ========
 
 Ganging Results
@@ -215,15 +215,15 @@ The query above, re-written as a left join, would look like this::
 
 and the results might look like this:
 
-==  =====   ======  ==========  ========
-ID	First	Last	Pref		Value
-==  =====   ======  ==========  ========
-12  John    Doe	    last_login	01/01/09
-12  John    Doe	    user_type	Editor
-12  John    Doe	    eyes		Blue
-15  Susan   Smith   last_login	12/31/08
-15  Susan   Smith   user_type	User
-16	Bob	    Barker  NULL        NULL
-==  =====   ======  ==========  ========
+==  =====  ======  ==========  ========
+ID  First  Last    Pref        Value
+==  =====  ======  ==========  ========
+12  John   Doe     last_login  01/01/09
+12  John   Doe     user_type   Editor
+12  John   Doe     eyes        Blue
+15  Susan  Smith   last_login  12/31/08
+15  Susan  Smith   user_type   User
+16  Bob    Barker  NULL        NULL
+==  =====  ======  ==========  ========
 
 because the user whose ID is 16 has no preferences set in the user_prefs table.
