@@ -10,3 +10,4 @@ The following pages are for advanced users, and explain some of the inner workin
    development/filesystem
    development/defining_routes
    development/writing_queries
+   development/hooks

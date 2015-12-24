@@ -30,6 +30,8 @@ Clicking on the "Add another registration unit" will popup a new modal window al
 
 * The Description field is also optional, but permits a more detailed description, photo uploads, links to related information, etc.
 
+* The Submission Capacity field will limit the total number of visitors who may register. This is gauged by *quantity* of registrations purchased, so it may be more than one-per-submission, which is why this field is distinct from the corresponding field in FormBuilder Forms. Once this capacity number has been reached, visitors will see a generic message *or* the text entered into the **Cut-off message** field of the associated form.
+
 If you intend to charge money for the registration, and have properly configured the Shoppng Cart module to interact with the Registration module, then an additional tab will appear in the "New Registration Unit" interface:
 
 .. figure:: images/registrations-unit-sales.*

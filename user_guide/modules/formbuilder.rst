@@ -33,10 +33,17 @@ At the basic level, a Manifesto form has
 * A storage method (database or database + email)
 * Email address if "database + email" is selected
 * *Either* "confirmation text" or a "Redirect URL"
+* Submission cut-off date
+* Submission capacity
+* Cut-off message
 
-This last option governs whether or not, after submitting the form, the user is shown your custom message on the subsequent page, or the user's browser is redirected to the page of your choice.
+The **Confirmation Text/Redirect** option governs whether or not, after submitting the form, the user is shown your custom message on the subsequent page, or the user's browser is redirected to the page of your choice.
 
-Once you have configured the basic properties of a FormBuilder Form, you must now configure it.
+The **Submission Cut-off Date** may be used as a cut-off date/time after which the form will no longer be presented to users for completion. Instead, they will see a generic message *or* the text entered into the **Cut-off message** field.
+
+Similarly, the **Submission Capacity** field will limit the total number of visitors who may complete the form. Once that number has been reached, visitors will see a generic message *or* the text entered into the **Cut-off message** field.
+
+Once you have configured the basic properties of a FormBuilder Form, you must now configure it to add fields.
 
 .. note::
 

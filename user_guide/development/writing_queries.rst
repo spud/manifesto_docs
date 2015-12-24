@@ -28,7 +28,7 @@ And this will construct a query that looks like
 
 ``SELECT mytable.* FROM mytable WHERE objectid > 256 LIMIT 10 ORDER BY lastname;``
 
-That would be the long way. Most classes are built with their own Oracle class that ex-tends the parent Oracle, so, for example, a "MediaOracle" might include a constructor method that sets reasonable defaults, e.g. ::
+That would be the long way. Most classes are built with their own Oracle class that extends the parent Oracle, so, for example, a "MediaOracle" might include a constructor method that sets reasonable defaults, e.g. ::
 
 	function MediaOracle() {
 		$this->set_tablename('media');
@@ -43,8 +43,8 @@ So that you can use it more efficiently for your own queries, like ::
 	$o->get_record();
 
 
-About get_record()
-==================
+Retrieving Data: get_record()
+=============================
 
 The get_record() method of the Oracle class has three possible response values:
 
@@ -52,19 +52,19 @@ The get_record() method of the Oracle class has three possible response values:
 * **false, with error_flag=0** means the query was executed successfully, but returned no results
 * **true** which means that the Oracle's "response_array" and/or "object_array" properties will contain the results
 
-The format of the result array is dependent upon the get_record() call. Manifesto always takes the results from the query, and stores each row as an associative array in the re-sponse_array property. Using this method, you can loop through the response_array an output the data, e.g. ::
+The format of the result array is dependent upon the get_record() call. Manifesto always takes the results from the query, and stores each row as an associative array in the ``response_array`` property. Using this method, you can loop through the ``response_array`` an output the data, e.g. ::
 
 	foreach($oracle->response_array as $i=>$row) {
 		echo 'Row '.$i.' is a user with the lastname '.$row['lastname'];
 	}
 
-The advantage to object-oriented programming in this context is that you are able to work with actual objects, not just associative arrays. For this reason, the parent Oracle class in Manifesto defines a method called make_objects() that loops through the stan-dard database results ($response_array) and builds content objects for each row. It uses the "ref_class" property of the Oracle to determine what sort of objects to instanti-ate. The resulting objects are stored in the object_array property of the Oracle. So, to revisit our example, you could also do ::
+The advantage to object-oriented programming in this context is that you are able to work with actual objects, not just associative arrays. For this reason, the parent Oracle class in Manifesto defines a method called make_objects() that loops through the standard database results ($response_array) and builds content objects for each row. It uses the "ref_class" property of the Oracle to determine what sort of objects to instantiate. The resulting objects are stored in the object_array property of the Oracle. So, to revisit our example, you could also do ::
 
 	foreach($oracle->object_array as $i=>$obj) {
 		echo 'Row '.$i.' is a user with the lastname '.$obj->lastname;
 	}
 
-Since you have full objects at your disposal, you can leverage the full power of the ob-ject, such as echoing ``$obj->get_fullname()`` or ``$obj->display_addresses()``.
+Since you have full objects at your disposal, you can leverage the full power of the object, such as echoing ``$obj->get_fullname()`` or ``$obj->display_addresses()``.
 
 Populating the object_array property is standard procedure for Oracle clases, so if you want to avoid creating the object_array, you must call get_record(false). This optional parameter indicates that Manifesto should not attempt to call the make_objects() method for the results. This can be useful for landing pages, where your intention is to display a list of only one or two properties (like title and author), and you don't need to query the database for every field in the table when you will only be displaying a handful of fields.
 
@@ -100,7 +100,7 @@ And voilà, it is done.
 Shortcuts
 =========
 
-There are few handy shortcuts in the Oracle class for frequently-used queries. Since every object in Manifesto has a unique ID (called "objectid") within its own database ta-ble, there is a shortcut for accessing a single, unique object from the database, by call-ing the "get_unique()" method of the appropriate Oracle class and passing the objectid of the object you are requesting. This method either returns boolean FALSE, or the ob-ject you requested, e.g. ::
+There are few handy shortcuts in the Oracle class for frequently-used queries. Since every object in Manifesto has a unique ID (called "objectid") within its own database table, there is a shortcut for accessing a single, unique object from the database, by calling the "get_unique()" method of the appropriate Oracle class and passing the objectid of the object you are requesting. This method either returns boolean FALSE, or the object you requested, e.g. ::
 
 	$oracle = new MediaOracle();
 	$object = $oracle->get_unique(14);
@@ -110,7 +110,7 @@ If you need to perform a similar query, but on a field other than the objectid f
 	$oracle = new MediaOracle();
 	$object = $oracle->get_unique('My First Picture','title');
 
-While Manifesto is largely designed to identify unique records based on ID numbers, this extended functionality accomodates the uses of longer, text-based identifiers fre-quently seen in blog entries and other search-engine-optimized URLS like::
+While Manifesto is largely designed to identify unique records based on ID numbers, this extended functionality accomodates the uses of longer, text-based identifiers frequently seen in blog entries and other search-engine-optimized URLS like::
 
    http://www.example.com/blog/my-long-blog-title-about-whatever
 
@@ -122,7 +122,7 @@ To cover the possibility of errors, the complete code sequence would look someth
 		$object->display();
 	} else {
 		if ($oracle->error_flag) {
-			// an error occurred in the query! Tell the Oracle to dis-play it!
+			// an error occurred in the query! Tell the Oracle to display it!
 			$oracle->display_error();
 		} else {
 			// no error, but no result either! Inform the user!
@@ -133,7 +133,7 @@ To cover the possibility of errors, the complete code sequence would look someth
 Complex Conditions, Joins and Such
 ==================================
 
-All this simple stuff is nice, but sometimes you need to perform substantially more com-plex queries, with table joins. The procedure is much the same as in the basic queries. Whenever you are dealing with queries that involve more than one table, it is a good idea to get in the habit of using full table notation for field names, e.g. "users.firstname" instead of "firstname". This can avoid substantial confusion when joined tables contain identically-named fields.
+All this simple stuff is nice, but sometimes you need to perform substantially more complex queries, with table joins. The procedure is much the same as in the basic queries. Whenever you are dealing with queries that involve more than one table, it is a good idea to get in the habit of using full table notation for field names, e.g. "users.firstname" instead of "firstname". This can avoid substantial confusion when joined tables contain identically-named fields.
 
 The set_tablename() method defines the primary table for the query (the significance of being "primary" comes into play when generating objects from the result array).
 
@@ -176,7 +176,7 @@ To handle situations like this, the generic Oracle class includes a "gangby" pro
 
    $oracle->set_gangby('id');
 
-Then the results are returned to you as an array of arrays -- the outermost array corre-sponds to a single ID number (and therefore to a single person), and its contents are an array, each element of which is one of the rows corresponding to that user.
+Then the results are returned to you as an array of arrays -- the outermost array corresponds to a single ID number (and therefore to a single person), and its contents are an array, each element of which is one of the rows corresponding to that user.
 
 So to iterate through your results, you could do this::
 
@@ -203,13 +203,13 @@ And you would print::
 
 Left Joins
 ==========
-If you're very familiar with SQL, you would realize that the query above would return no results for a user if the user had NO preferences set. You would not even see their ID, first, or last name. To get results back from a JOIN that includes records with no rows in the joined table, you need to use a LEFT JOIN. A left join basically says "give me results for ALL users no matter what, and if they have no preferences, return NULL in the cor-responding fields."
+If you're very familiar with SQL, you would realize that the query above would return no results for a user if the user had NO preferences set. You would not even see their ID, first, or last name. To get results back from a JOIN that includes records with no rows in the joined table, you need to use a LEFT JOIN. A left join basically says "give me results for ALL users no matter what, and if they have no preferences, return NULL in the corresponding fields."
 
-The query above, re-written as a left join, would look like this::
+The query above, rewritten as a left join, would look like this::
 
 	$oracle = new UserOracle();
 	$oracle->set_selectfields('users.*,user_prefs.preference,user_prefs.value');
-	$oracle->set_left_join('user_prefs ON users_prefs.user_id = us-ers.objectid');
+	$oracle->set_left_join('user_prefs ON users_prefs.user_id = users.objectid');
 	$oracle->get_record(false);
 	$results = $oracle->response_array;
 
