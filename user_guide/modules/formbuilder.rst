@@ -125,6 +125,16 @@ On the "Advanced" tab of the configuration options, there are some additional pa
 
 * The **Prefix** and **Suffix** fields can be used to provide small bits of text before and/or after your input. The most common uses of this are for fields expected to contain prices (might use a "$" prefix), and for fields that you want to make clear are optional (might use an "(optional)" suffix.
 
+* There are a series of checkboxes to flag the field in particular ways as well
+
+	* *This field is disabled* will automatically add a "disabled" property to the field input, making it read-only to the user
+
+	* *Show this field as a column in listings* makes this column one of the default columns displayed on the submission listing page
+
+	* *This field is expected to be the contact email for the user* marks a field as the one which contains a valid contact address for the user who fills it out. (In other words, any correspondance with the submittor would use the address in this field.)
+
+	* *Use this field as a tally counter* The value entered into this field may be used to calculate a tally, e.g. of event attendees ("How many people will be in your party?")
+
 * The **Notes** field is for tooltip-like notes on the content or format of the field. It is typically presented to the user as a small circle-I which, when clicked on, reveals the note.
 
 * The **Container Class** and **Element Class** fields allow you to configure your element with custom classes that may be used to style the manner in which they are rendered. The *container class* is assigned to the tag of the element used as a container for the field label, input, options, etc. The *element class* is applied only to the specific element, e.g. the text input field itself, or the individual checkboxes.
@@ -134,3 +144,51 @@ On the "Advanced" tab of the configuration options, there are some additional pa
 .. note::
 
    The outcome of a validation format is also dependent upon whether or not the field is marked as **required.** If a field with a URL validation format is *not* required, then if the user enters an invalid URL, the form will submit but  an empty value will be stored in the database. If the field is marked as **required,** however, the form will not submit until a valid URL is entered.
+
+Viewing Submissions
+===================
+
+In the FormBuilder section of the Editorial Console, there is a "Submissions" tab that allows you to select from the existing forms to view the submissions made to that form.
+
+.. figure:: images/formbuilder-submissions-listing.*
+   :align: center
+   :scale: 75
+   :target: ./images/formbuilder-submissions-listing.jpg
+
+By default, submissions are listed in reverse-chronological order, and the listing will include submissions currently marked as deleted, which appear in grey. This can often occur if, for example, a payment associated with the form has not yet been processed, or another action causes the submissions to be marked as deleted or incomplete.
+
+You may use the icons in each row to edit and resubmit any entry, or to delete unwanted or duplicate entries. There are also checkboxes for each entry that allow you to perform batch operations. Simply tick the box for each of the submissions you want to process, and you are presented below with the ability to execute the following actions:
+
+* Delete (batch deletes all selected entries)
+* Resend (Send email to the designated reciptient for this form)
+* Resend and Undeleted (Send email, and unmark the entries as deleted, restoring them to active or completed status)
+* Export (create a CSV file of only the selected entries)
+* Email Submittors (if the form contains a field designated as a useable contact email address, send a batch email to the submittor. This can be useful in the event of e.g. wanting to contact the authors of all submissions to notify them of cancellations, change of venue, send a thank you, etc).
+
+This last option will present you with an interface for adding a Subject and Body of the email you wish to send.
+
+The fields that appear in the listing are determined during the creation of the form fields. Any number of fields appearing on the form may be marked as "Listing" fields, which means they will appear as columns in the listing. If no fields of the form are explicitly noted as "Listing" fields, Manifesto will use the first 3 defined fields in the form instead. (*This sometimes produces undesirable results, such as when one of the first three fields contains an array, or other non-scalar value.*)
+
+.. figure:: images/formbuilder-submissions-download.*
+   :align: center
+   :scale: 75
+   :target: ./images/formbuilder-submissions-download.jpg
+
+By clicking on the "Download" tab, you can easily download form submissions in CSV format (suitable for opening in Excel), even restricting your download to include only submissions on or after a certain date. The downloaded file includes a column indicating whether or not the submission is active, or deleted as well, so you can use that information to sort or filter in your spreadsheet software.
+
+.. figure:: images/formbuilder-submissions-filter.*
+   :align: center
+   :scale: 75
+   :target: ./images/formbuilder-submissions-filter.jpg
+
+You may also filter the listing by any one of the fields in the form. The filtering is a bit rudimentary, but may be used to locate e.g. any submissions that include a "gmail.com" address, or submissions requesting more that 3 attendees, etc. Just select the field you want to filter on, and then you select an operator &mdash "=" for exact matches; "&gt;" and "&lt;" for fields with numbers, and a generic "matches" option that will match partial strings.
+
+Clicking on any of the linked fields in the listing will pull up the editorial display page for that particular entry.
+
+.. figure:: images/formbuilder-submission-detail.*
+   :align: center
+   :scale: 75
+   :target: ./images/formbuilder-submission-detail.jpg
+
+Here you may view all of the fields associated with a form submission, and you may also resend an email copy of the submission to the recipient designated for that form.
+
