@@ -26,13 +26,14 @@ Below are a series of introductions and guides to the various modules used for m
 .. toctree::
    :maxdepth: 2
 
-   modules/template_pages
-   modules/event_calendar
    modules/blog
-   modules/staff
-   modules/html_rotator
+   modules/event_calendar
    modules/formbuilder
+   modules/html_rotator
    modules/menus
+   modules/preview
    modules/registrations
    modules/shopping_cart
+   modules/staff
+   modules/template_pages
 
