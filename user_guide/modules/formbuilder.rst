@@ -100,7 +100,6 @@ So these are the pieces you combine to build your form. Aside from their field t
 .. figure:: images/formbuilder-field-configure.*
    :align: center
    :scale: 75
-   :target: ./images/formbuilder-field-configure.png
 
 * First, you can create multiple *sections* in your form, simply by adding a section name to your field configuration. Each section is rendered within its own ``fieldset`` element, using the section name as a ``legend`` element. By default, all fields are added to a "Default" section.
 
@@ -117,7 +116,6 @@ So these are the pieces you combine to build your form. Aside from their field t
 .. figure:: images/formbuilder-field-configure-advanced.*
    :align: center
    :scale: 75
-   :target: ./images/formbuilder-field-configure-advanced.png
 
 On the "Advanced" tab of the configuration options, there are some additional parameters for your form element.
 
@@ -153,7 +151,6 @@ In the FormBuilder section of the Editorial Console, there is a "Submissions" ta
 .. figure:: images/formbuilder-submissions-listing.*
    :align: center
    :scale: 75
-   :target: ./images/formbuilder-submissions-listing.jpg
 
 By default, submissions are listed in reverse-chronological order, and the listing will include submissions currently marked as deleted, which appear in grey. This can often occur if, for example, a payment associated with the form has not yet been processed, or another action causes the submissions to be marked as deleted or incomplete.
 
@@ -172,14 +169,12 @@ The fields that appear in the listing are determined during the creation of the 
 .. figure:: images/formbuilder-submissions-download.*
    :align: center
    :scale: 75
-   :target: ./images/formbuilder-submissions-download.jpg
 
 By clicking on the "Download" tab, you can easily download form submissions in CSV format (suitable for opening in Excel), even restricting your download to include only submissions on or after a certain date. The downloaded file includes a column indicating whether or not the submission is active, or deleted as well, so you can use that information to sort or filter in your spreadsheet software.
 
 .. figure:: images/formbuilder-submissions-filter.*
    :align: center
    :scale: 75
-   :target: ./images/formbuilder-submissions-filter.jpg
 
 You may also filter the listing by any one of the fields in the form. The filtering is a bit rudimentary, but may be used to locate e.g. any submissions that include a "gmail.com" address, or submissions requesting more that 3 attendees, etc. Just select the field you want to filter on, and then you select an operator &mdash "=" for exact matches; "&gt;" and "&lt;" for fields with numbers, and a generic "matches" option that will match partial strings.
 
@@ -188,7 +183,6 @@ Clicking on any of the linked fields in the listing will pull up the editorial d
 .. figure:: images/formbuilder-submission-detail.*
    :align: center
    :scale: 75
-   :target: ./images/formbuilder-submission-detail.jpg
 
 Here you may view all of the fields associated with a form submission, and you may also resend an email copy of the submission to the recipient designated for that form.
 
