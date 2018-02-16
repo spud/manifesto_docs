@@ -2,7 +2,7 @@
 Overview of Manifesto
 *********************
 
-Manifesto is a Content Management System designed to provide a flexible but structured toolkit for building highly customized websites. It has a mature, modular designthat gives even novice users the ability to manage their website content with a minimal of technical understanding. From WYSIWYG editing to complex media handling, and standards-compliant output, Manifesto is a fully-modern framework. It also offers a consistent architecture that makes creating and extending new functionality easy for developers.
+Manifesto is a loosely-coupled Conent Managment System and framework designed to provide a flexible but structured toolkit for building highly customized websites. It has a mature, modular designthat gives even novice users the ability to manage their website content with a minimal of technical understanding. From WYSIWYG editing to complex media handling, and standards-compliant output, Manifesto is a fully-modern framework. It also offers a consistent architecture that makes creating and extending new functionality easy for developers.
 
 Manifesto Features
 ==================
