@@ -219,17 +219,17 @@ and you would receive an array of results. However, the number of results would 
 
 ``number of users * number of preferences for each user``
 
-So you would have, for example,:
+So you would have, for example,
 
-==  =====   ====    ==========  ========
+==  =====   =====   ==========  ========
 ID  First   Last    Pref        Value
-==  =====   ====    ==========  ========
+==  =====   =====   ==========  ========
 12  John    Doe     last_login  01/01/09
 12  John    Doe     user_type   Editor
 12  John    Doe     eyes        Blue
 15  Susan   Smith   last_login  12/31/08
 15  Susan   Smith   user_type   User
-==  =====   ====    ==========  ========
+==  =====   =====   ==========  ========
 
 Ganging Results
 ===============
