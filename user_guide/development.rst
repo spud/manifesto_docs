@@ -14,6 +14,6 @@ The following pages are for advanced users, and explain some of the inner workin
    development/models
    development/views
    development/controllers
-   development/writing_queries
+   development/queries
    development/about_hydration
    development/hooks
