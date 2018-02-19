@@ -108,7 +108,7 @@ This method allows you to pass in a whole other Oracle object to join the two co
 .. toctree::
    :maxdepth: 2
 
-development/queries/retrieving_data
-development/queries/updates
-development/queries/joins
-development/queries/ganging_results
+queries/retrieving_data
+queries/updates
+queries/joins
+queries/ganging_results
