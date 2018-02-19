@@ -105,9 +105,9 @@ set_union
 ---------
 This method allows you to pass in a whole other Oracle object to join the two combined queries with a ``UNION`` statement.
 
-Here is some other text.
 
 .. toctree::
+   :maxdepth: 3
    :caption: More about queries
    
 /development/queries/retrieving_data
