@@ -39,17 +39,15 @@ Directories::
    docs
       The junk drawer directory, containing notes, license, documenation, etc
    images
-   	  Storage for site-wide, core image elements (deprecated)
+      Storage for site-wide, core image elements (deprecated)
    locale
-   	  Storage for locale-specific translation files (deprecated)
+      Storage for locale-specific translation files (deprecated)
    mods
-   	  All Core and Base modules live in here. Described in more detail below.
+      All Core and Base modules live in here. Described in more detail below.
    site
-	  All implementation-specific files go in here. The /site/ directory can contain its own /mods/ directory, containing modules specific to this site, and can have one or more alternate *Themes*, allowing limitless overrides of any of the templates available on the site.
+      All implementation-specific files go in here. The /site/ directory can contain its own /mods/ directory, containing modules specific to this site, and can have one or more alternate *Themes*, allowing limitless overrides of any of the templates available on the site.
 
-	  In theory, you should never modify any files outside of the /site/ directory, because all of those files belong to the core Manifesto package, and may be overwritten the next time the software is upgraded.
-   third_party
-	  Software and scripts from external vendors is stored here
+      In theory, you should never modify any files outside of the /site/ directory, because all of those files belong to the core Manifesto package, and may be overwritten the next time the software is upgraded.
 
 Each module is a directory containing one or more directories that house all the classes, templates, and addtional files to provide the module's functionality.
 
@@ -68,6 +66,6 @@ Module Directory::
    editor_includes
       Scripts used for Editor-only functionality
    includes
-   	  All related templates, hooks, and random function files
+      All related templates, hooks, and random function files
    styles
-   	  Module-specific CSS files
+      Module-specific CSS files

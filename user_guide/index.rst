@@ -3,12 +3,12 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-####################
-Manifesto User Guide
-####################
+#######################
+Manifesto Documentation
+#######################
 
 ************
-Introduction
+User Guide
 ************
 
 .. figure:: images/manifesto-bubble-logo.*
@@ -34,6 +34,14 @@ Contents:
    admin_console
    scenarios
    troubleshooting
+
+
+***************
+Developer Guide
+***************
+
+.. toctree::
+
    development
 
 
