@@ -16,13 +16,13 @@ The Oracle class (as in "ask the Oracle at Delphi", not the database company) is
 
 So you can construct a query on any table as follows::
 
-	$o = new Oracle;
-	$o->set_tablename('mytable');
-	$o->set_selectfields('mytable.*');
-	$o->set_where_clause('objectid > 256');
-	$o->set_limit_count(10);
-	$o->set_orderby('lastname');
-	$o->get_record(); // see below for more information on this method
+	$oracle = new Oracle;
+	$oracle->set_tablename('mytable');
+	$oracle->set_selectfields('mytable.*');
+	$oracle->set_where_clause('objectid > 256');
+	$oracle->set_limit_count(10);
+	$oracle->set_orderby('lastname');
+	$oracle->get_record(); // see below for more information on this method
 
 And this will construct a query that looks like
 
@@ -38,9 +38,9 @@ That would be the long way. Most classes are built with their own Oracle class t
 
 So that you can use it more efficiently for your own queries, like ::
 
-	$o = new MediaOracle();
-	$o->set_where_clause("mime_type = 'image'");
-	$o->get_record();
+	$oracle = new MediaOracle();
+	$oracle->set_where_clause("mime_type = 'image'");
+	$oracle->get_record();
 
 Building the query programmatically
 ===================================
@@ -219,7 +219,7 @@ and you would receive an array of results. However, the number of results would 
 
 ``number of users * number of preferences for each user``
 
-So you would have, for example,
+So you would have, for example,:
 
 ==  =====   ====    ==========  ========
 ID  First   Last    Pref        Value
