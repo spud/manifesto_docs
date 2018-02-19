@@ -12,7 +12,7 @@ The Oracle class (as in "ask the Oracle at Delphi", not the database company) is
 * orderby
 * limit_count
 * limit_start
-* ref_class
+* object_class
 
 So you can construct a query on any table as follows::
 

@@ -10,7 +10,7 @@ The following pages are for advanced users, and explain some of the inner workin
    development/overview
    development/modularity
    development/filesystem
-   development/defining_routes
+   development/routes
    development/models
    development/views
    development/controllers
