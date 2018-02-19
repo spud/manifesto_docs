@@ -85,7 +85,7 @@ News item 34 {
 When This is Useful
 ===================
 
-While exactuing a few extra database queries here and there for a single object might not be a huge problem, the problem becomes more obvious when retrieving a long list of objects.
+While executing a few extra database queries here and there for a single object might not be a huge problem, the problem becomes more obvious when retrieving a long list of objects.
 
 Let's say you want a list of all the news items in your database, and the categories they include. The simple way looks like this::
 
@@ -97,7 +97,7 @@ foreach($result as $news_object) {
 	echo $news_object->title.': '.$news_object->category_list;
 }
 
-For 501 news objects, this requires 501 database queries.
+For 500 news objects, this requires 501 database queries.
 
 Doing the same thing with table joins and Manifesto's built-in hydration functionality, you can accomplish the same result with **1** query.
 
@@ -123,7 +123,10 @@ When the News object reads in the database results in order to populate its prop
 
 $obj->props is an array of data that doesn't have a corresponding property in the object. Any results that come back from a database query that don't correspond to a property are stored in $obj->props['dynamic'].
 
-So after our complex join, but before object hydration, our News object would have some properties like
+So after our complex join, but before object hydration, our News object would have some properties like ::
 
+$news_object->prop['dynamic']['category_objectid'] = 12;
 $news_object->prop['dynamic']['category_name'] = "Science";
-$news_object->prop['dynamic']['category_name'] = "Science";
+$news_object->prop['dynamic']['category_shortname'] = "science";
+
+and the object_hydrate method would loop over those results and use the data to instantiate a full Category object, which is then attached to the News post.
