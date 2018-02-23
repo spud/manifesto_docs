@@ -24,9 +24,9 @@ We would create a route map element that looks like this::
 	$routemap['media'] = array(
 		'handler'=>'module',
 		'module'=>'media',
-		'category'=>get_segment(0),
-		'function'=>get_segment(1),
-		'id'=>get_segment(2)
+		'category'=>seg(0),
+		'function'=>seg(1),
+		'id'=>seg(2)
 	);
 
 And after being processed, we now have ::
@@ -56,15 +56,15 @@ You would like a shorter solution that works with any category, so you create a 
 	$routemap['s'] = array(
 		'handler'=>'module',
 		'module'=>'staff',
-		'function'=>get_segment(0),
-		'category'=>get_segment(1)
+		'function'=>'listing',
+		'category'=>seg(0)
 	);
 
 ...and that will allow you to use the much shorter ::
 
    /s/board-of-directors
 
-to reach the same page. You are basically telling Manifesto that, if the *trigger* is ``s``, then treat the next segment of the URL as the category, and assume that this is for the Staff moodule and that you want to call the ``listing`` function in the controller.
+to reach the same page. You are basically telling Manifesto that, if the *trigger* is ``s``, then treat the next segment of the URL as the category, and assume that this is for the Staff module and that you want to call the ``listing`` handler in the controller.
 
 You may notice that that was a very specific use-case. Because we hard-coded "listing" as the function being requested, that means that we cannot use a URL like ::
 
@@ -87,10 +87,10 @@ You could modify the "URL Path" property of the Module definition, but you would
 	$routemap['store'] = array(
 		'handler'=>'module',
 		'module'=>'shopping_cart',
-		'function'=>get_segment(0),
-		'id'=>get_segment(1),
-		'xparam1'=>get_segment(2),
-		'xparam2'=>get_segment(3),
+		'function'=>seg(0),
+		'id'=>seg(1),
+		'xparam1'=>seg(2),
+		'xparam2'=>seg(3),
 	);
 
 By using a relatively generic route definition like this, it ensures that all of the functionality that worked with ::
@@ -99,6 +99,6 @@ By using a relatively generic route definition like this, it ensures that all of
 
 will now work with ::
 
-   /store
+   /store/
 
 instead.

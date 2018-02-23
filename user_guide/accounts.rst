@@ -1,14 +1,14 @@
 ***********************
-User accounts and Login
+User Accounts, Roles, and Login
 ***********************
-Manifesto employs user accounts to manage access to resources and permissions for editing, viewing, and deleting content. There are four built-in **Roles** into which User accounts are classified.
+Manifesto has user accounts and roles fully integrated in its core, ready to use. Manifesto employs user accounts to manage access to resources and permissions for editing, viewing, and deleting content, as well as traditional user accounts for ecommerce or community-building. Manifesto uses roles to classify users into groups of permissions and privileges. There are four built-in **Roles** into which user accounts are classified.
 
 Roles
 =====
 
-By default, any visitors to the website are considered unprivileged, **Anonymous** users.
+By default, any visitors to the website are considered unprivileged, **Anonymous** users. They are typically granted read-only access to public content.
 
-A regular **User** account allows your website to manage logins for individual users. These too, have no particular privileges, but having a User-level account allows Manifesto to associate content with an individual (for example, to know that Shopping Cart #151 belongs to User “Jon Smith,” or that a comment on a blog post belongs to User “Alisha Somebody.”)
+A regular **User** account allows your website to manage logins for individual users. These too, have no particular privileges, but having a User-level account allows Manifesto to associate content with an individual (for example, to know that Shopping Cart #151 belongs to User “Jon Smith,” or that a comment on a blog post belongs to User “Alisha Salendar.”)
 
 An **Editor** account is granted access to the Editor Console, and generally has full access to add, edit, and delete any content on the site.
 
@@ -19,7 +19,7 @@ Any number of additional Roles may be defined, and you may offer restricted priv
 Permissions
 ===========
 
-Privileges can be granted to user roles only on a module-by-module basis. You cannot restrict permission at the level of categories or individual content types within a module (e.g. for Calendar Events but not Event Locations). The available permissions are:
+Privileges can be granted to user roles only on a module-by-module basis. You cannot restrict permission at the level of categories or individual content types within a module (e.g. for *Calendar Events* but not *Event Locations*). The available permissions are:
 
 * None (this role may not access this module at all)
 * Read (this role has permission to **view** content in this module)
@@ -33,11 +33,11 @@ Privileges can be granted to user roles only on a module-by-module basis. You ca
 
    Example permissions for the Editor role
 
-If your site supports User-level accounts, there is a login screen at `http://www.example.org/usr`.
-
 Editors can access the Editor Console at `http://www.example.org/editor`
 
 Admins can access the Admin Console at `http://www.example.org/admin`
+
+If your site supports User-level accounts, there is a login screen at `http://www.example.org/usr`.
 
 Creating new user accounts
 ==========================
@@ -52,10 +52,10 @@ A user with the Admin role can create any type of User Account : regular users, 
 
 An user with only an "Editor" level role can only create less-powerful users (e.g. "User" or "Member" or some other unprivileged role). These options are enforced programmatically, so that editors are not even given the opportunity to assign a role above the level of User.
 
-* Click "New User" and you will be presented with a form to complete
+* Click "New User" and you will be presented with a form to complete.
 * The **Username** field is required, and is expected to be a single string with no unusual punctuation. Currently, the characters ``/%~ ,$&#{}'"=`` are considered invalid, and cannot be used in a username.
 * The **Password** and **Confirm Password** need to have the same password entered into each one, to ensure that you have entered it correctly. If they do not match, you will be alerted immediately.
-* **First Name** and **Last Name** should be self-explanatory
+* **First Name** and **Last Name** should be self-explanatory.
 * **Display Name** is the name used for bylines on the website. It could be a full name, nickname, or other pseudonym.
 * **Email** is a required field, and the address entered is normally used to send a confirmation email in order the verify the account.
 * **Email Verification**: As was just stated, Manifesto uses a confirmation email to verify that the email address associated with your account is valid. This provides a bare minimum guarantee of accountability, since we can at least confirm that we have a means for contacting the user associated with the account.

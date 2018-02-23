@@ -4,7 +4,7 @@ Linking to a PDF
 
 One common task for editors is to make a PDF file available for download from your website. While this seems like a trivial task, it actually involves a series of steps that is best spelled out explicitly.
 
-#. First, n the page where you want to link to the PDF, scroll to the bottom of the editing form, to the section entitled "Associated Media," shown below:
+#. First, on the page where you want to link to the PDF, scroll to the bottom of the editing form, to the section entitled "Associated Media," shown below:
 
     .. figure:: ./images/file-upload.*
 
