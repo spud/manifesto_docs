@@ -1,1 +1,4 @@
 *.bbprojectd
+*.bbprojectsettings
+
+*.bbprojectdata
