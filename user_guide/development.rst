@@ -1,6 +1,6 @@
-***********
-Development
-***********
+***************
+Developer Guide
+***************
 
 The following pages are for advanced users, and explain some of the inner working of Manifesto.
 
