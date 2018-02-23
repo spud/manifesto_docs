@@ -24,7 +24,7 @@ This guide is designed to provide an overview of Manifesto as it is used to mana
 Contents:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
 
    overview
    glossary
