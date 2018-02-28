@@ -2,6 +2,14 @@
 Queries
 *******
 
+.. toctree::
+   :caption: More about queries
+
+   queries/retrieving_data
+   queries/updates
+   queries/joins
+   queries/ganging_results
+
 Manifesto currently works only with MySQL databases. There is a Connection class that handles the most rudimentary aspects of connecting to the database, and you should be able to use Manifesto for most activities without ever having to establishing a database connection manually.
 
 The Oracle class (as in "ask the Oracle at Delphi", not the database company) is the parent of all database-querying classes. The properties of the Oracle class correspond largely to the various components of a database query. The most significant properties are:
@@ -104,13 +112,3 @@ This method is *always additive* in that calls will always append to the existin
 set_union
 ---------
 This method allows you to pass in a whole other Oracle object to join the two combined queries with a ``UNION`` statement.
-
-
-.. toctree::
-   :maxdepth: 3
-   :caption: More about queries
-   
-   queries/retrieving_data
-   queries/updates
-   queries/joins
-   queries/ganging_results

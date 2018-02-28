@@ -5,13 +5,13 @@ Manifesto, like many other frameworks, uses a single front controller to route p
 
 In order to process pages, Manifesto requires a minimal amount of information:
 
-#. Request handler: This is one of ``restricted``, ``module``, or ``ajax``. The first indicates that the request is for a password-protected area, like the administrative backend. The second, ``module``, is the most common, indicating that the request is a standard URL to be fulfilled by a Manifesto module, and rendered in the browser. The ``ajax`` handler expects to fulfill page requests by returning JSON, XML, or other fragmentary data, without rendering full page views.
+#. _Request handler_: This is one of ``restricted``, ``module``, or ``ajax``. The first indicates that the request is for a password-protected area, like the administrative backend. The second, ``module``, is the most common, indicating that the request is a standard URL to be fulfilled by a Manifesto module, and rendered in the browser. The ``ajax`` handler expects to fulfill page requests by returning JSON, XML, or other fragmentary data, without rendering full page views.
 
-#. Request Module: The module which handles fulfillment of the primary content being requested on the page. Even an aggregate page like the home page is governed by a particular module.
+#. _Request module_: The module which handles fulfillment of the primary content being requested on the page. Even an aggregate page like the home page is governed by a particular module.
 
-#. Request Function: The function or method to be performed. The controller uses this information to know how to handle the request.
+#. _Request function_: The function or method to be performed. The controller uses this information to know how to handle the request.
 
-#. Request Identifier: This is a unique identifier that allows Manifesto to retrieve a particular content object from the database.
+#. _Request identifier_: This is a unique identifier that allows Manifesto to retrieve a particular content object from the database.
 
 The routes.php file is designed to parse the page URL request into segments, and to assign those segments to the variable described above.
 
@@ -19,7 +19,7 @@ The first segment after the domain name is called the *trigger*. The routes file
 
 http://www.example.org/media/landscapes/display/ocean-view-with-sunset/index.php
 
-We would create a route map element that looks like this::
+The segment "media" is the trigger, and we would create a route map element that looks like this::
 
 	$routemap['media'] = array(
 		'handler'=>'module',
@@ -64,7 +64,7 @@ You would like a shorter solution that works with any category, so you create a 
 
    /s/board-of-directors
 
-to reach the same page. You are basically telling Manifesto that, if the *trigger* is ``s``, then treat the next segment of the URL as the category, and assume that this is for the Staff module and that you want to call the ``listing`` handler in the controller.
+to reach the same page. You are basically telling Manifesto that, if the *trigger* is ``s``, then treat the next segment of the URL as the category, and assert that this is for the Staff module(``module=>'staff'``) and that you want to call the ``listing`` handler (``function='listing'``) in the controller.
 
 You may notice that that was a very specific use-case. Because we hard-coded "listing" as the function being requested, that means that we cannot use a URL like ::
 
