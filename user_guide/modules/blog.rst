@@ -21,7 +21,7 @@ After initially installing the module, the editorial interface will prompt you t
    :width: 600 px
    :align: center
 
-The *Cooridinator* is simply used to describe the person or entity under whose purview the blog runs. They may or may not be a contributor themselves, but they are considered to be responsible for the blog.
+The *Coordinator* is simply used to describe the person or entity under whose purview the blog runs. They may or may not be a contributor themselves, but they are considered to be responsible for the blog.
 
 The *Blog Name* and *Short Name* are self-explanatory, and the *Description* is optional -- your layout may or may not display the description at the top of the landing page, as an introduction to the blog.
 
