@@ -9,10 +9,10 @@ Manifesto's controller is actually split between two files, the ``module_prep.in
 The module_prep.inc file handles a few of the preliminary functions to prepare the request:
 
 - Check the user's permissions to view content from the current module
--- Send a 401 if permission fails
+* Send a 401 if permission fails
 - If an ID has been passed in, attempt to retrieve the unique content into ``$G->contentobj``
 - If this is a standard (non-AJAX) request, load the page layout template
--- The actual controller file will be called from within the layout template
+* The actual controller file will be called from within the layout template
 - If this is an AJAX request, load the controller immediately, skipping the layout
 
 The controller file is actually a procedural script, rather than a Controller object with multiple methods to execute. In Manifesto, a controller file simply provides a switch/case statement where each case handles the requested function.
