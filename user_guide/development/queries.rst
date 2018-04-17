@@ -89,7 +89,7 @@ set_join
 --------
 This method allows you to pass in an entire straight join statement in a single call, e.g.::
 
-$this->set_join('hash_categories ON (hash_categories.category = othertable.objectid)');
+$oracle->set_join('hash_categories ON (hash_categories.reference_id = othertable.objectid)');
 
 This method is *always additive* in that calls will always append to the existing query.
 
@@ -97,7 +97,7 @@ set_left_join
 -------------
 This method allows you to pass in an entire left join statement in a single call, e.g.::
 
-$this->set_left_join('hash_categories ON (hash_categories.category = othertable.objectid)');
+$oracle->set_left_join('hash_categories ON (hash_categories.reference_id = othertable.objectid)');
 
 This method is *always additive* in that calls will always append to the existing query.
 
@@ -105,10 +105,20 @@ set_right_join
 --------------
 This method allows you to pass in an entire right join statement in a single call, e.g.::
 
-$this->set_right_join('hash_categories ON (hash_categories.category = othertable.objectid)');
+$oracle->set_right_join('hash_categories ON (hash_categories.reference_id = othertable.objectid)');
 
 This method is *always additive* in that calls will always append to the existing query.
 
 set_union
 ---------
-This method allows you to pass in a whole other Oracle object to join the two combined queries with a ``UNION`` statement.
+This method allows you to pass in a whole other Oracle object to join the two combined queries with a ``UNION`` statement.e.g.::
+
+$oracle = new CategoryOracle();
+$oracle->set_where_clause('deleted = 0');
+$oracle2 = new CustomCategoryOracle();
+$oracle2->set_where_clause('deleted = 0');
+::
+$oracle->set_union($oracle2);
+$oracle->get_record();
+
+// The results will be the union of all the Category responses with all of the CustomCategory responses.
