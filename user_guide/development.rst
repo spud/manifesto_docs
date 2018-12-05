@@ -12,8 +12,9 @@ The following pages are for advanced users, and explain some of the inner workin
    development/filesystem
    development/routes
    development/models
+   development/page_templates
    development/views
    development/controllers
    development/queries
    development/about_hydration
-   development/hooks
+   development/events

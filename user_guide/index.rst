@@ -17,7 +17,7 @@ User Guide
    :scale: 50
    :alt: Manifesto logo
 
-Manifesto is a Content Management System (CMS) that uses an object-oriented system to manage complex structured data and to render that content, whether as web pages, RSS reeds, iCalendar output, or a web service API to name just a few examples.
+Manifesto is a object-oriented Content Management System (CMS) and PHP framework for managing complex structured data and rendering that content, whether as web pages, RSS reeds, iCalendar output, or a web service API.
 
 This guide is designed to provide an overview of Manifesto as it is used to manage a large website. It covers the principles of Manifesto and specific guides for administering content from static HTML pages to recurring events and custom form creation.
 

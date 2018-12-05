@@ -2,7 +2,7 @@
 Overview of Manifesto
 *********************
 
-Manifesto is a loosely-coupled Content Managment System and framework designed to provide a flexible but structured toolkit for building highly customized websites. It has a mature, modular designthat gives even novice users the ability to manage their website content with a minimal of technical understanding. From WYSIWYG editing to complex media handling, and standards-compliant output, Manifesto is a fully-modern framework. It also offers a consistent architecture that makes creating and extending new functionality easy for developers.
+Manifesto is a loosely-coupled Content Managment System and PHP framework designed to provide a flexible and structured toolkit for building highly customized websites. It has a mature, modular design that gives even novice users the ability to manage their website content with a minimal of technical understanding. From WYSIWYG editing to complex media handling, with namespaced design and standards-compliant output, Manifesto is a fully-modern framework. It also offers a consistent architecture that makes creating and extending new functionality easy for developers.
 
 Manifesto Features
 ==================
@@ -19,8 +19,8 @@ Manifesto Features
 **Integrated taxonomy and categorization tools**
    Tag your content with multiple categories for specific needs, or use a consistent scheme across the entire site
 
-**Built-in User accounts**
-   User management is built into the core of Manifesto, with complex permissions and a Role system for coordinating privilege levels
+**Built-in User accounts and roles-based permissions**
+   User management is built into the core of Manifesto, with complex permissions and a role system for coordinating privilege levels
 
 **Complex media management**
    Flexible media repository stores and manages a limitless variety of media assets (image, audio, video, download, etc)
@@ -31,17 +31,14 @@ Manifesto Features
 **Database query building**
    A comprehensive and easy-to-use database query class handles all your MySQL queries and result sets in a consistent manner
 
-**User Input Sanitization**
+**User input sanitization**
    Scrub user-submitted data before processing, stripping out malicious code and (optionally) running HTML through HTMLTidy for cleanup
 
-**Programmatic form generation & a WYSIWYG Form Builder**
-   A simple configuration array for constructing complex forms for editing and collecting data, and a drag’n’drop editor for building and saving your own forms.
+**Programmatic form generation & a drag'n'drop form builder**
+   A simple configuration array for constructing complex forms for editing and collecting data, and a drag’n’drop editor for building and saving your own forms
 
 **A GUI when you want it, a script when you need it**
-   Simple configurations are managed with a web interface, but you can always roll up your sleeves and write and upload the complex code yourself
-
-**Integrated CSS Editor**
-   Manage all of your stylesheets and media queries with our syntax-checking built-in Stylesheet Editor
+   Most configuration is managed with a web-based interface, but you can always roll up your sleeves and write and upload the complex code yourself
 
 **WYSIWYG editing**
    The popular TinyMCE editor has been customized with Manifesto-specific features for media embedding and link management

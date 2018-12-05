@@ -1,3 +1,4 @@
 *.bbprojectd
 *.bbprojectsettings
 *.bbprojectdata
+.DS_Store
