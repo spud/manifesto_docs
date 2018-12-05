@@ -6,9 +6,9 @@ Manifesto renders HTML pages by employing a consistent series of templates, each
 
 Like many CMS frameworks, the index.php is used strictly for receiving and routing requests, and contains no HTML markup.
 
-The **page layout** templates contain the outermost structure of a rendered page, consisting of the ``html``,``head``, and ``body`` tags (both open and closed), as well as any column-based structure interior to the page.
+The **page layout** templates contain the outermost structure of a rendered page, consisting of the ``html``, ``head``, and ``body`` tags (both open and closed), as well as any column-based structure interior to the page.
 
-Within that template, event calls are executed in various places to acquire the content that will fill in the page. Most of those event calls result in more specific view templates becoming embedded in the page template, e.g. within the &lt;head&gt; section, the ``page_head`` event is called to include scripts, css, and other ``head`` elements, while the ``module_prep.inc`` file belonging to the current module is included to further process the request. See the Workflow_ document for more information on the sequence of includes that is typically executed during a page request.
+Within that template, event calls are executed in various places to acquire the content that will fill in the page. Most of those event calls result in more specific view templates becoming embedded in the page template, e.g. within the <head> section, the ``page_head`` event is called to include scripts, css, and other ``head`` elements, while the ``module_prep.inc`` file belonging to the current module is included to further process the request. See the Workflow_ document for more information on the sequence of includes that is typically executed during a page request.
 
 .. _Workflow:
 
@@ -50,4 +50,4 @@ print.tmpl.php
 template_pages.tmpl.php
 	By default, this template is identical to module.tmpl.php, but is included to demonstrate how a module can easily override the default templat for all of its content.
 
-Also, the ``body`` element of each template is tagged with a class that indicates what page layout template is in use (e.g. "l-module" for module.tmpl.php), and the element is also tagged with a class indicating what module is currently active, e.g. "mod-dated_posts" for the Dated Posts module.
+Also, the ``body`` element of each template is tagged with a class that indicates what page layout template is in use (e.g. ``l-module`` for module.tmpl.php), and the element is also tagged with a class indicating what module is currently active, e.g. ``mod-dated_posts`` for the Dated Posts module.
