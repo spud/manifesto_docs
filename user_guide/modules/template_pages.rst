@@ -87,3 +87,9 @@ There are two ways to alter the location of a template page on your site:
 
    #. From the editing form of a specific page, you can select a new `parent` and `position` value from their respective menus. After submitting the form, the current page *and all of its descendents* will be re-ordered to their new location.
 
+Adding to the main navigation
+=============================
+If your site is not using custom menus, it is probably automatically generating main navigation menu items based on the top-level pages in this module. Adding a new top-level page (one which has no parent page) may automatically add a new item to your main navigation. There is currently no way to avoid this without resorting to using the custom Menus module, or by hiding the additional menu item with CSS.
+
+
+

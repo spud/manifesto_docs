@@ -6,3 +6,5 @@ Events are points in the code — they can be in layout templates or in functio
 
 The main page layout templates, for example, are bare-bones structures that define the skeleton of an HTML page. Beyond the simple structural elements, the templates include code blocks that basically say things like "I'm about to render the left-hand sidebar...are there any modules that want to insert content here?" Similarly, there are events that occur every time content is deleted, so a module could act upon the data before the deletion occurs.
 
+Events are already built into the code (though modules can define custom events if appropriate), so most of the developer interaction consists of assigning "listeners" to the events -- functions (or entire files) -- that execute when the event is triggered.
+

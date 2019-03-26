@@ -49,7 +49,7 @@ Module Directory::
 
    module_prep.inc
       This file handles additonal preparation specific to the module, which occurs before any modular templates have been loaded
-   [controller]
+   controller.inc
       File named after the shortname of the module, this acts like a module-specific controller file, routing page requests based on function to the appropriate templates and scripts
    admin_includes/
       Scripts used for functionality in the Site Management interface

@@ -9,7 +9,7 @@ Staff profiles consist of basic personal information:
 * First Name
 * Middle Name
 * Last Name
-* Posnomials ("Ph.D","Sr",etc)
+* Postnomials ("Ph.D","Sr",etc)
 * Department
 * Position
 * Phone
