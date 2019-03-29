@@ -5,13 +5,13 @@ Manifesto, like many other frameworks, uses a single front controller to route p
 
 In order to process pages, Manifesto requires a minimal amount of information:
 
-#. _Request handler_: This is one of ``restricted``, ``module``, or ``ajax``. The first indicates that the request is for a password-protected area, like the administrative backend. The second, ``module``, is the most common, indicating that the request is a standard URL to be fulfilled by a Manifesto module, and rendered in the browser. The ``ajax`` handler expects to fulfill page requests by returning JSON, XML, or other fragmentary data, without rendering full page views.
+#. **Request handler**: This is one of ``restricted``, ``module``, or ``ajax``. The first indicates that the request is for a password-protected area, like the administrative backend. The second, ``module``, is the most common, indicating that the request is a standard URL to be fulfilled by a Manifesto module, and rendered in the browser. The ``ajax`` handler expects to fulfill page requests by returning JSON, XML, or other fragmentary data, without rendering full page views.
 
-#. _Request module_: The module which handles fulfillment of the primary content being requested on the page. Even an aggregate page like the home page is governed by a particular module.
+#. **Request module**: The module which handles fulfillment of the primary content being requested on the page. Even an aggregate page like the home page is governed by a particular module.
 
-#. _Request function_: The function or method to be performed. The controller uses this information to know how to handle the request.
+#. **Request function**: The function or method to be performed. The controller uses this information to know how to handle the request.
 
-#. _Request identifier_: This is a unique identifier that allows Manifesto to retrieve a particular content object from the database.
+#. **Request identifier**: This is a unique identifier that allows Manifesto to retrieve a particular content object from the database.
 
 The routes.php file is designed to parse the page URL request into segments, and to assign those segments to the variable described above.
 
