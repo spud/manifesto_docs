@@ -18,3 +18,4 @@ The following pages are for advanced users, and explain some of the inner workin
    development/queries
    development/about_hydration
    development/events
+   development/sanatizing_text
