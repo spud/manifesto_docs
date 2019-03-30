@@ -13,9 +13,9 @@ Once installed, you should be able to immediately use and manage the site, using
 
 Top-level things to know:
 
-- You should never need to edit or modify any files outside of the /site/ directory. The site folder contains any modules you load specifically for your site, the composer.json file for loading third-party libraries, and the /themes/ directory where your customizations will live.
-- The URLs /admin/ and /editor/ are for managing the site configuration and content management respectively
+- You should never need to edit or modify any files outside of the /site/ directory. The site directory contains any modules you load specifically for your site, the composer.json file for loading third-party libraries, and the /themes/ directory where your customizations will live.
 - Your first course of action is likely to be either installing additional required modules, or cloning the default theme to begin customization
+- The URLs /admin/ and /editor/ are for managing the site configuration and content management respectively
 - There are default, canonical routes for publicly accessing any module content, which follows this pattern::
 
 http://example.org/mod/[module_shortname]/[function]/[identifier]/index.php
@@ -24,4 +24,6 @@ and this structure is parsed into segments that help route the request to the pr
 
 http://example.org/my-custom-content
 
-but of course these requests must simply be looked up in the database, rather than being programatically determined by the URL structure. 
+but of course these requests must simply be looked up in the database, rather than being programatically determined by the URL structure. (WordPress has the convenience of really only needing to lookup custom slugs in a single database table, whereas Manifesto supports custom URLs for any possible content type.)
+
+The "cheapest" way to create custom routes is to have at least one "trigger" segment in the URL that provides an indicator of which module is providing the content. That allows us to skip a database lookup to determine the page to display.

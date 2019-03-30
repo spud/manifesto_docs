@@ -7,6 +7,7 @@ The following pages are for advanced users, and explain some of the inner workin
 .. toctree::
    :maxdepth: 3
 
+   development/quick_start
    development/overview
    development/modularity
    development/filesystem
