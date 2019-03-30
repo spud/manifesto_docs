@@ -21,7 +21,7 @@ http://www.example.org/media/landscapes/display/ocean-view-with-sunset/index.php
 
 The segment "media" is the trigger, and we would create a route map element that looks like this::
 
-	$routemap['media'] = array(
+	$routes['media'] = array(
 		'handler'=>'module',
 		'module'=>'media',
 		'category'=>seg(0),
@@ -53,7 +53,7 @@ If you want to create systematic shortcut URLs (rather than one-off custom URLs)
 
 You would like a shorter solution that works with any category, so you create a route like::
 
-	$routemap['s'] = array(
+	$routes['s'] = array(
 		'handler'=>'module',
 		'module'=>'staff',
 		'function'=>'listing',
@@ -84,7 +84,7 @@ but you would rather have a cleaner look, like ::
 
 You could modify the "URL Path" property of the Module definition, but you would also have to create a custom route that would be able to parse these new URLs. It would look something like this::
 
-	$routemap['store'] = array(
+	$routes['store'] = array(
 		'handler'=>'module',
 		'module'=>'shopping_cart',
 		'function'=>seg(0),
