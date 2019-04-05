@@ -48,6 +48,6 @@ print.tmpl.php
 	The template invoked when a page is printed. This allows for heavy customization that may be easier to accomplish by modifying a template rather than customizing a print-based stylsheet.
 
 template_pages.tmpl.php
-	By default, this template is identical to module.tmpl.php, but is included to demonstrate how a module can easily override the default templat for all of its content.
+	By default, this template is identical to module.tmpl.php, but is included to demonstrate how a module can easily override the default template for all of its content.
 
 Also, the ``body`` element of each template is tagged with a class that indicates what page layout template is in use (e.g. ``l-module`` for module.tmpl.php), and the element is also tagged with a class indicating what module is currently active, e.g. ``mod-dated_posts`` for the Dated Posts module.

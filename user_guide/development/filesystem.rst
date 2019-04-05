@@ -41,7 +41,7 @@ Directories::
    site
 	  All implementation-specific files go in here. The /site/ directory may contain its own /mods/ directory, containing modules specific to this site, and may have one or more alternate *Themes*, allowing limitless overrides of any of the templates available on the site.
 
-	  In theory, you should never modify any files outside of the /site/ directory, because all of those files belong to the core Manifesto package, and may be overwritten the next time the software is upgraded.
+In theory, you should never modify any files outside of the /site/ directory, because all of those files belong to the core Manifesto package, and may be overwritten the next time the software is upgraded.
 
 Each module is a directory containing one or more sub-directories that house all the classes, templates, and addtional files to provide the module's functionality.
 
