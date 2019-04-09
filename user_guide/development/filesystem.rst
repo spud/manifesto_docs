@@ -4,7 +4,7 @@ The Manifesto Directory Structure
 
 This guide merely provides an overview of the files and directories to be found in Manifesto website installation.
 
-At the root level, there are only 4 PHP files::
+At the root level, there are only 4 significant PHP files::
 
    _media_browser.php
       The popup window for media selection used by the editor
@@ -41,7 +41,7 @@ Directories::
    site
 	  All implementation-specific files go in here. The /site/ directory may contain its own /mods/ directory, containing modules specific to this site, and may have one or more alternate *Themes*, allowing limitless overrides of any of the templates available on the site.
 
-	  In theory, you should never modify any files outside of the /site/ directory, because all of those files belong to the core Manifesto package, and may be overwritten the next time the software is upgraded.
+In theory, you should never modify any files outside of the /site/ directory, because all of those files belong to the core Manifesto package, and may be overwritten the next time the software is upgraded.
 
 Each module is a directory containing one or more sub-directories that house all the classes, templates, and addtional files to provide the module's functionality.
 
@@ -50,7 +50,7 @@ Module Directory::
    module_prep.inc
       This file handles additonal preparation specific to the module, which occurs before any modular templates have been loaded
    controller.inc
-      File named after the shortname of the module, this acts like a module-specific controller file, routing page requests based on function to the appropriate templates and scripts
+      This acts like a module-specific controller file, routing page requests based on function to the appropriate templates and scripts
    admin_includes/
       Scripts used for functionality in the Site Management interface
    classes/
