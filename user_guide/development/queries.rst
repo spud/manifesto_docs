@@ -62,7 +62,7 @@ Generally speaking, you'll always start with an Oracle object, traditionally nam
 
 set_module
 ----------
-Sets the name of the module responsible for this query. Used largely for auditing and tracking purposes.::
+Sets the name of the module responsible for this query. Used largely for auditing and tracking purposes.
 
 ``Ex: $oracle->set_module('accounts');``
 
@@ -92,9 +92,14 @@ This method adds one or more fields to the ``SELECT`` portion of a query. It mus
 
 set_where_clause
 ----------------
-This method establishes the conditions for the query in the ``WHERE`` clause. This method is *always additive* in that calls will always append to the existing query. The most basic example is to pass in a simple comparitive statement like ``"objectid = 23"``. And while multiple calls to this method may be chained together, you may also pass in more complex statements like ``"objectid = 23 AND (post_date > '2018-01-01' OR status = 'New')"``. See more examples below.
+This method establishes the conditions for the query in the ``WHERE`` clause. This method is *always additive* in that calls will always append to the existing query. The most basic example is to pass in a simple comparitive statement like ``"objectid = 23"``. While multiple calls to this method may be chained together, you may also directly pass in more complex statements like ``"objectid = 23 AND (post_date > '2018-01-01' OR status = 'New')"``. See more examples below.
 
 ``Ex: $oracle->set_where_clause("'users.status = 'Active'");``
+
+or
+
+``Ex: $oracle->set_where_clause("objectid = 23 AND (post_date > '2018-01-01' OR status = 'New'))"``
+
 
 prepend_where_clause
 --------------------
@@ -110,25 +115,25 @@ This sets the ``HAVING`` portion of a query. This method is *destructive* in tha
 
 set_join
 --------
-This method allows you to pass in an entire straight join statement in a single call, e.g.::
+This method allows you to pass in an entire straight join statement in a single call.
 
-$oracle->set_join('hash_categories ON (hash_categories.reference_id = othertable.objectid)');
+``$oracle->set_join('hash_categories ON (hash_categories.reference_id = othertable.objectid)');``
 
 This method is *always additive* in that calls will always append to the existing query.
 
 set_left_join
 -------------
-This method allows you to pass in an entire left join statement in a single call, e.g.::
+This method allows you to pass in an entire left join statement in a single call.
 
-$oracle->set_left_join('hash_categories ON (hash_categories.reference_id = othertable.objectid)');
+``$oracle->set_left_join("hash_categories ON (hash_categories.reference_id = othertable.objectid AND hash_categories.reference_class = 'Book')");``
 
 This method is *always additive* in that calls will always append to the existing query.
 
 set_right_join
 --------------
-This method allows you to pass in an entire right join statement in a single call, e.g.::
+This method allows you to pass in an entire right join statement in a single call.
 
-$oracle->set_right_join('hash_categories ON (hash_categories.reference_id = othertable.objectid)');
+``$oracle->set_right_join('hash_categories ON (hash_categories.reference_id = othertable.objectid)');``
 
 This method is *always additive* in that calls will always append to the existing query.
 
@@ -140,8 +145,27 @@ $oracle = new CategoryOracle();
 $oracle->set_where_clause('deleted = 0');
 $oracle2 = new CustomCategoryOracle();
 $oracle2->set_where_clause('deleted = 0');
-::
 $oracle->set_union($oracle2);
 $oracle->get_record();
 
-// The results will be the union of all the Category responses with all of the CustomCategory responses.
+The results will be the union of all the non-deleted Category responses with all of the non-deleted CustomCategory responses.
+
+get_count
+---------
+After the query parameters are all set on the Oracle, ``get_count()`` executes a modified version of your query **without limit_count** to get a total count of all possible responses before limiting your query results. This allows for Manifesto to properly calculate the pagination of results, but it is also useful to avoid the expense of a more complicated database query that may not return any results.
+
+It returns the total count of results, and stores this result in ``$oracle->total_count``.
+
+``Ex: $total = $oracle->get_count();``
+
+get_record
+----------
+This is the final call to build the query and execute the database request. By default, this method executes the query, loops through theh results, and _instantiates some instance of a ManifestoObject for each result in the database,_ as designated by the ``object_class`` of the Oracle. If you wish to access the results of the query as an array of associative arrays instead, simply pass ``false`` as the only parameter to this method.
+
+Note: This method does **not** return the result array. It sets the ``response_count``, ``total_count``, ``response_array``, and ``object_array`` properties of the Oracle, which may then be accessed later. This method returns the Oracle object itself, so it may be chained together with other methods.
+
+``Ex: $oracle->get_record(); // to return an array of objects ``
+
+or
+
+``Ex: $oracle->get_record(false); // to return an array of associative arrays, one per row```
