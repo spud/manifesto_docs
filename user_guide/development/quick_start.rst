@@ -26,4 +26,8 @@ http://example.org/my-custom-content
 
 but of course these requests must simply be looked up in the database, rather than being programatically determined by the URL structure. (WordPress has the convenience of really only needing to lookup custom slugs in a single database table, whereas Manifesto supports custom URLs for any possible content type.)
 
-The "cheapest" way to create custom routes is to have at least one "trigger" segment in the URL that provides an indicator of which module is providing the content. That allows us to skip a database lookup to determine the page to display.
+The "cheapest" way to create custom routes is to have at least one "trigger" segment in the URL that provides an indicator of which module is providing the content. That allows us to skip the custom URL database lookup to determine the page to display. Another benefit to this method is that it creates a sort of "whitelist" of URLs — any request that doesn't follow a particular, well-defined pattern is obviously an invalid request, and can be 404'd immediately.
+
+See `the Routes section`_ for more information.
+
+.. _the Routes section: routes.rst

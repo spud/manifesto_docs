@@ -27,6 +27,7 @@ Below are a series of introductions and guides to the various modules used for m
    :maxdepth: 2
 
    modules/blog
+   modules/dated_posts
    modules/event_calendar
    modules/formbuilder
    modules/html_rotator

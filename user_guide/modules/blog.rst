@@ -8,7 +8,7 @@ Blogs are a great way to keep up-to-date news prominent on your site, or to give
 
    This information discusses the *Blog* module. If your site uses the *Dated Posts* module, which provides much of the same functionality without multiple blog capability, please see that section of the manual instead.
 
-Because Manifesto can host more than one blog (perhaps the President has one, and the head of IT has a separate one), it creates a conceptual distinction between a *Blog* (the container, or umbrella), and a *Blog Entry* (the individual posts).
+Because Manifesto can host more than one blog (perhaps the CEO has one, and the head of IT has a separate one), it creates a conceptual distinction between a *Blog* (the container, or umbrella), and a *Blog Entry* (the individual posts).
 
 The *Blog* is a simple entity, with a title, coordinator, optional description, and an owner. Unlike many other modules, a Blog can have more restrictive permissions, allowing only a single person to create and edit new blog posts, rather than permitting unfettered access to anyone with Editor permissions. These are called "owners" of the blog. And a blog entry is more likely (but not required) to indicate the author, unlike most of the other content on a website.
 
