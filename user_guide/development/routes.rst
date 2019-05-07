@@ -9,11 +9,11 @@ In order to process pages, Manifesto requires a minimal amount of information:
 
 #. **Request module**: The module which handles fulfillment of the primary content being requested on the page. Even an aggregate page like the home page is governed by a particular module.
 
-#. **Request function**: The function or method to be performed. The controller uses this information to know how to handle the request.
+#. **Request function**: The function or method to be performed. The controller uses this information to know how to handle the request. If empty, some default behavior is usually indicated (like "list all entries, paginated").
 
 #. **Request identifier**: This is a unique identifier that allows Manifesto to retrieve a particular content object from the database.
 
-The routes.php file is designed to parse the page URL request into segments, and to assign those segments to the variable described above.
+The routes.php file is designed to parse the page URL request into segments, and to assign those segments to the variables described above.
 
 The first segment after the domain name is called the *trigger*. The routes file allows you to specify an array (one per trigger) that indicates how the remaining segments should be mapped to variables. For example, given the URL
 
@@ -95,10 +95,22 @@ You could modify the "URL Path" property of the Module definition, but you would
 
 By using a relatively generic route definition like this, it ensures that all of the functionality that worked with ::
 
-   /mod_shopping_cart/
+   /mod/shopping_cart/
 
 will now work with ::
 
    /store/
 
 instead.
+
+The Category
+============
+For the sake of convenience, because it is frequently used as a content filtering tool, Manifesto is set up to store a single category as the "current" category for the page, so it is easily included in database queries.
+
+If `$G->route['category']` is defined (using a valid category shortname), or if $_REQUEST['category'] is a valid category shortname, Manifesto will lookup the corresponding category and assign it to $G->category. At that point, you can easily add a category-based filer to your database queries by simply calling::
+
+   $oracle->filter_by_category($G->category);
+
+The great advantage here, of course, is that our new query filter understands  category hierarchy, so we filter not only on the current category, but also any of its descendent categories as well.
+
+The default $G->category->shortname is "all," so you may use that to confirm whether or not a non-default category has been set.

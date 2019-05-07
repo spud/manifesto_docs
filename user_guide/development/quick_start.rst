@@ -30,4 +30,4 @@ The "cheapest" way to create custom routes is to have at least one "trigger" seg
 
 See `the Routes section`_ for more information.
 
-.. _the Routes section: routes.rst
+.. _the Routes section: routes.html

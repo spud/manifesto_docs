@@ -8,6 +8,7 @@ The following pages are for advanced users, and explain some of the inner workin
    :maxdepth: 3
 
    development/quick_start
+   development/important_concepts
    development/new_theme
    development/overview
    development/modularity
