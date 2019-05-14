@@ -4,6 +4,13 @@ Important Concepts
 
 In order to have a better understanding of Manifesto's architectural design principles and infrastructure, there are a few points worth emphasizing.
 
+Content
+=======
+
+It is important to remember that, above all, Manifesto is designed for serving *content* more so than *pages.* In this sense, Manifesto fundamentally acts like an API, capable of managing, listing, and displaying structured data of any sort.
+
+It happens to have an excellent module for serving HTML-pages-as-content (you could host an entire site using only the **TemplatePages** module), but it also works well for mailing list archives, or CD collections, or concert events, where each of those content types is a first-class citizen of Manifesto, with its own database structure, access methods, and view templates.
+
 The PageController
 ==================
 
@@ -20,12 +27,12 @@ Routing
 
 At a fundamental level, URLs in Manifesto identify unique views by specifying the following information:
 
-- A module that provides the content (stored as $G->req_module)
-- A specific content type (stored as $G->req_cass)
-- A specific ID for the content (stored as $G->req_id)
-- A specific action to take (edit, display, delete, update, etc, stored as $G->req_function)
+* A module that provides the content (stored as ``$G->req_module``)
+* A specific content type (stored as ``$G->req_class``)
+* A specific ID for the content (stored as ``$G->req_id``)
+* A specific action to take (edit, display, delete, update, etc, stored as ``$G->req_function``)
 
-Routes -- the mapping between URL structure and handling the page request -- are configured in sites/routes.php. They function, basically, by converting segments of the URL to those pieces of information. Custom URLs work by assigning default values to some of those variables.
+Routes -- the mapping between URL structure and handling the page request -- are configured in ``sites/routes.php``. They function, basically, by converting segments of the URL to those pieces of information. Custom URLs work by assigning default values to some of those variables.
 
 For example, the default URL structure::
 
@@ -41,17 +48,17 @@ To continue the example, since the Dated Posts module supports the "shortname" p
 
 /news/my-news-title
 
-to represent the content, where "my-news-title" is the shortname property for Dated Post #12. Properly designed modules understand that if a _numeric_ ID is represented in a URL segment, it should be looked up in the database by comparing it to the "objectid" column in the database, but if a text string is used in the URL, it should be compared against the "shortname" column in the database.
+to represent the content, where "my-news-title" is the shortname property for Dated Post #12. Properly designed modules understand that if a *numeric* ID is represented in a URL segment, it should be looked up in the database by comparing it to the "objectid" column in the database, but if a *text* string is used in the URL, it should be compared against the "shortname" column in the database.
 
 Controllers
 ===========
 
-Every module provides its own controller script, named "controller.inc." Manifesto, however, includes a unique step _between_ the route and the controller in the form of a script called ``module_prep.inc``. Some interesting things happen in module_prep.inc::
+Every module provides its own controller script, named "controller.inc." Manifesto, however, includes a unique step *between* the route and the controller in the form of a script called ``module_prep.inc``. Some interesting things happen in module_prep.inc::
 
-- Manifesto checks to confirm that the current user "read" access to the current module
-- Any request for a unique piece of content will require looking up the content in the database, so Manifesto attempts to retrieve the content and stores the result in $G->contentobj. This saves developers the trouble of having to repeat the process of retrieving the content for every method handled by the controller.
-- If the request is an AJAX request, module_prep.inc next loads the controller, which is expected to output a standard JSON reponse and exit.
-- If the request is a standard page request, Manifesto next loads the page layout template (which itself is expected to load the controller file). The idea here is that many or all of the handlers in the controller are going to be rendered within the structure of that template, so we might as well start now.
+* Manifesto checks to confirm that the current user has "read" access to the current module
+* Any request for a unique piece of content will require looking up the content in the database, so Manifesto attempts to retrieve the content and stores the result in ``$G->contentobj``. This saves developers the trouble of having to repeat the process of retrieving the content for every method handled by the controller.
+* If the request is an AJAX request, module_prep.inc next loads the controller, which is expected to output a standard JSON reponse and exit.
+* If the request is a standard page request, Manifesto next loads the page layout template (which itself is expected to load the controller file). The idea here is that many or all of the handlers in the controller are going to be rendered within the structure of that template, so we might as well start now.
 
 The nice thing about Manifesto, though, is that all of this behavior is plainly visible in the code, so creating your own module that deviates from this pattern is easily achieved if necessary.
 
@@ -60,7 +67,7 @@ Loading javascript
 
 Manifesto buffers its javascript output before rendering it to the screen, and this allows it to load and order elements like javascript at any point during the execution of the request. If you use::
 
-$G->add_script('my-custom-javascript',G_URL.'site/themes/my-theme/custom.js');
+$G->add_script('my-custom-javascript', G_URL.'site/themes/my-theme/custom.js');
 
-from anywhere in your script prior to loading the page layout template, your script will be output when the PageController::output_scripts() call is made in the template.
+from anywhere in your script prior to loading the page layout template, your script will be output when the ``PageController::output_scripts()`` call is made in the template.
 

@@ -59,6 +59,8 @@ Module Directory::
       Contains any moudle-specific scripts run on a schedule
    editor_includes/
       Scripts used for functionality in the Editorial interface
+   js/
+      Contains any moudle-specific javascripts to be attached to views
    includes/
    	  All related templates and random function files
    styles/
