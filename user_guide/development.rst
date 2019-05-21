@@ -10,6 +10,7 @@ The following pages are for advanced users, and explain some of the inner workin
    development/quick_start
    development/important_concepts
    development/new_theme
+   development/quick_reference
    development/overview
    development/modularity
    development/filesystem
