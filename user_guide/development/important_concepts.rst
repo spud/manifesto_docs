@@ -7,14 +7,14 @@ In order to have a better understanding of Manifesto's architectural design prin
 Content
 =======
 
-It is important to remember that, above all, Manifesto is designed for serving *content* more so than *pages.* In this sense, Manifesto fundamentally acts like an API, capable of managing, listing, and displaying structured data of any sort.
+It is important to remember that, above all, Manifesto is designed for serving *content* more so than just *pages.* In this sense, Manifesto fundamentally acts like an API, capable of managing, listing, and displaying structured data of any sort.
 
-It happens to have an excellent module for serving HTML-pages-as-content (you could host an entire site using only the **TemplatePages** module), but it also works well for mailing list archives, or CD collections, or concert events, where each of those content types is a first-class citizen of Manifesto, with its own database structure, access methods, and view templates.
+It happens to have an excellent module for serving HTML-pages-as-content (you could host an entire site using only the **TemplatePages** module), but it also works well for mailing list archives, or CD collections, or concert events, where each of those content types is a **first-class citizen** of Manifesto, with its own database structure, access methods, and view templates.
 
 The PageController
 ==================
 
-Manifesto takes advantage of an supervisory object called the PageController (instantiated as the object $G).
+Manifesto takes advantage of an supervisory object called the PageController (instantiated as the object ``$G``).
 
 The PageController acts as a storage repository for site preferences, current language, loaded modules, current user and other information that is convenient to have readily stored for use in business logic and page rendering. Consequently, you will frequently see::
 
