@@ -39,22 +39,22 @@ Manifesto uses its own internal Date object for convenience, and automatically c
 
 	echo $d->get_date($format=null);
 
-**date_short**: ``01/30/12 or 30/01/12``
-**date_long**: ``January 30, 2012`` or ``30 January 2012``
-**date_brief**: ``01/30`` or ``30/01``
-**extended**: `Sunday, 30 January 2012`
-**nicedate**: ``Jan 30, 2012 14:45`` or ``30 Jan, 2012 14:45``
-**datetime**: ``30 Jan 2012 2:45:13 PM``
-**datetime_utc**: ``30 Jan 2012 14:45:13 UTC``
-**datetime_short**: ``1/30 14:45 EST`` or ``30/1 14:45 EST``
-**time_short**: ``2:45 PM`` or ``14:45``
-**dow**: ``0-6 (Sunday-Saturday)``
-**monthname**: ``January``
-**time**: ``2:45:36 PM`` or ``14:45:36``
-**timewithzone**: ``14:45:36 EST``
-**week**: ``13 (Week of year)``
-**day_short**: ``Sat``
-**day_long**: ``Saturday``
-**ical_date**: ``20120130``
-**ical_datetime**: ``20120130T144536``
-**date**: return default date format (``30 Jan 2012``)
+|**date_short**: ``01/30/12`` or ``30/01/12``
+|**date_long**: ``January 30, 2012`` or ``30 January 2012``
+|**date_brief**: ``01/30`` or ``30/01``
+|**extended**: `Sunday, 30 January 2012`
+|**nicedate**: ``Jan 30, 2012 14:45`` or ``30 Jan, 2012 14:45``
+|**datetime**: ``30 Jan 2012 2:45:13 PM``
+|**datetime_utc**: ``30 Jan 2012 14:45:13 UTC``
+|**datetime_short**: ``1/30 14:45 EST`` or ``30/1 14:45 EST``
+|**time_short**: ``2:45 PM`` or ``14:45``
+|**dow**: ``0-6 (Sunday-Saturday)``
+|**monthname**: ``January``
+|**time**: ``2:45:36 PM`` or ``14:45:36``
+|**timewithzone**: ``14:45:36 EST``
+|**week**: ``13 (Week of year)``
+|**day_short**: ``Sat``
+|**day_long**: ``Saturday``
+|**ical_date**: ``20120130``
+|**ical_datetime**: ``20120130T144536``
+|**date**: return default date format (``30 Jan 2012``)
