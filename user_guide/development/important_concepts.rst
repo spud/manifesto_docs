@@ -1,6 +1,6 @@
 ******************
-Important Concepts
-******************
+Important Concepts in Manifesto
+*******************************
 
 In order to have a better understanding of Manifesto's architectural design principles and infrastructure, there are a few points worth emphasizing.
 
@@ -25,7 +25,7 @@ at the start of many of the built-in rendering functions like ``edit`` or ``disp
 Routing
 =======================
 
-At a fundamental level, URLs in Manifesto identify unique views by specifying the following information:
+At a fundamental level, URLs in Manifesto identify unique views by specifying the following information::
 
 * A module that provides the content (stored as ``$G->req_module``)
 * A specific content type (stored as ``$G->req_class``)
@@ -69,5 +69,5 @@ Manifesto buffers its javascript output before rendering it to the screen, and t
 
 $G->add_script('my-custom-javascript', G_URL.'site/themes/my-theme/custom.js');
 
-from anywhere in your script prior to loading the page layout template, your script will be output when the ``PageController::output_scripts()`` call is made in the template.
+from anywhere in your script prior to loading the page layout template, your script will be output when the ``PageController::output_scripts()`` call is made in the template, usually at the bottom of the page_layout templates.
 
