@@ -13,13 +13,18 @@ Fully-instantiated Manifesto objects that support images all have an ``media_arr
 
 	$img = $obj->get_icon();
 
-and then display it with one of the pre-built output methods::
+and then display it with one of the pre-built output methods.
 
-	// Output standard size image in an IMG element, optionally linking to URL from $img->linkto property
+Output standard size image in an IMG element, optionally linking to URL from $img->linkto property::
+
 	echo $img->insert_file();
-	// Output the thumbnail image in an IMG tag, optionally linking to $url
+
+Output the thumbnail image in an IMG tag, optionally linking to $url::
+
 	echo $img->insert_thumb($url=null);
-	// Full-blown FIGURE tag with any size variant and FIGCAPTION if $img->caption is not empty
+
+Full-blown FIGURE tag with any size variant and FIGCAPTION if $img->caption is not empty::
+
 	echo $img->insert_with_caption($variant=null);
 
 Bear in mind that all of these media insertion methods will *also* work with PDFs, documents, video files, etc. Each of them will handle the proper output method determined by the Mimetypes array and the methods in the ``media_output_formats.inc`` file.
@@ -42,7 +47,7 @@ Manifesto uses its own internal Date object for convenience, and automatically c
 | **date_short**: ``01/30/12`` or ``30/01/12``
 | **date_long**: ``January 30, 2012`` or ``30 January 2012``
 | **date_brief**: ``01/30`` or ``30/01``
-| **extended**: `Sunday, 30 January 2012`
+| **extended**: ``Sunday, 30 January 2012``
 | **nicedate**: ``Jan 30, 2012 14:45`` or ``30 Jan, 2012 14:45``
 | **datetime**: ``30 Jan 2012 2:45:13 PM``
 | **datetime_utc**: ``30 Jan 2012 14:45:13 UTC``
