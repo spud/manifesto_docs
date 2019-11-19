@@ -31,6 +31,10 @@ Contents:
    accounts
    editor_console
    managing_content
+   media_management
+   categories
+   wysiwyg
+   debugging
    admin_console
    scenarios
    troubleshooting
