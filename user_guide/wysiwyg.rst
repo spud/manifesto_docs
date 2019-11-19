@@ -39,6 +39,4 @@ Uploading photos to embed in body copy
 
 See "`Selecting and inserting media`_" above.
 
-See `the Routes section`_ for more information.
-
-.. _Selecting and inserting media: media_management_.html
+.. _Selecting and inserting media: media_management.html
