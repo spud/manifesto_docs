@@ -13,7 +13,6 @@ User Guide
 
 .. figure:: images/manifesto-logo-@2x.*
    :align: right
-   :width: 400 px
    :scale: 50
    :alt: Manifesto logo
 
