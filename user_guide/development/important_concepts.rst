@@ -53,7 +53,7 @@ to represent the content, where "my-news-title" is the shortname property for Da
 Controllers
 ===========
 
-Every module provides its own controller script, named "controller.inc." Manifesto, however, includes a unique step *between* the route and the controller in the form of a script called ``module_prep.inc``. Some interesting things happen in module_prep.inc::
+Every module provides its own controller script, named "controller.inc." Manifesto, however, includes a unique step *between* the route and the controller in the form of a script called ``module_prep.inc``. Some interesting things happen in module_prep.inc:
 
 * Manifesto checks to confirm that the current user has "read" access to the current module
 * Any request for a unique piece of content will require looking up the content in the database, so Manifesto attempts to retrieve the content and stores the result in ``$G->contentobj``. This saves developers the trouble of having to repeat the process of retrieving the content for every method handled by the controller.
