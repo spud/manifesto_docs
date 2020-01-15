@@ -25,7 +25,7 @@ at the start of many of the built-in rendering functions like ``edit`` or ``disp
 Routing
 =======================
 
-At a fundamental level, URLs in Manifesto identify unique views by specifying the following information::
+At a fundamental level, URLs in Manifesto identify unique views by specifying the following information:
 
 * A module that provides the content (stored as ``$G->req_module``)
 * A specific content type (stored as ``$G->req_class``)

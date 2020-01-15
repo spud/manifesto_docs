@@ -12,16 +12,16 @@ Click the button, and fill out the form, giving your theme a new name, and indic
 
 You do not **have** to copy anything by default, but in general you probably want to copy
 
-   layout_templates
+   ``/layout_templates/``
       The outer HTML structure of all of your pages
-   global page_head include file
+   global ``page_head`` include file
       The main file that loads CSS and javascript into the page head
-   global pagebanner include file
+   global ``pagebanner.inc`` include file
       The template included as the page header (logo, site title, etc)
-   global footer include file
+   global ``footer.inc`` include file
       The footer included on every default page template
 
-The `_site_settings.scss` and `site.scss` SASS files are automatically copied to the new theme, but you can indicate if you want the (empty to begin with) site.css file to be copied over as well.
+The ``_site_settings.scss`` and ``site.scss`` SASS files are automatically copied to the new theme, but you can indicate if you want the (empty to begin with) site.css file to be copied over as well.
 
 The ``manifesto.css`` and ``administration.css`` files should only be modified by an experienced Manifesto developer, as you could severely affect the backend interface.
 
