@@ -1,5 +1,5 @@
 *********************************
-The Manifesto Directory Structure
+Manifesto Directory Structure
 *********************************
 
 This guide merely provides an overview of the files and directories to be found in Manifesto website installation.
@@ -10,8 +10,6 @@ At the root level, there are only 4 significant PHP files::
       The popup window for media selection used by the editor
    _link_browser.php
       The popup window for link creation used by the editor
-   cronmaster.php
-      The default script used by cron to trigger scheduled tasks
    index.php
       The default script page
 
@@ -28,8 +26,6 @@ Additional files::
 
 Directories::
 
-   cronjobs
-      Directory containing default scripts to be run on a schedule
    docs
       The junk drawer directory, containing notes, license, documenation, etc
    images
