@@ -37,10 +37,10 @@ Editors can access the Editor Console at `http://www.example.org/editor`
 
 Admins can access the Admin Console at `http://www.example.org/admin`
 
-If your site supports User-level accounts, there is a login screen at `http://www.example.org/usr`.
+If your site supports User-level accounts, there is a login screen at `http://www.example.org/usr`. If you want users to be able to create their own accounts, be sure that the "User" role allows "Read | Add | Own" permissions on the "Accounts" module.
 
-Creating new user accounts
-==========================
+Creating new user accounts (as an Editor or Admin)
+==================================================
 
 .. todo::
 
@@ -88,6 +88,8 @@ Account page
 ============
 
 Once logged in, you may edit the details of your user account. Regular users may use the /usr/ page to edit and modify their personal information, but websites that make use of user accounts may also have custom navigation elements designed to facilitate access to your account information.
+
+Note: Be sure that the User role has "Add" and "Own" permission for the Accounts module, which allows a user to edit their own User record.
 
 Editors and Admins will find their account details under the **My Account** link on the left-hand side.
 

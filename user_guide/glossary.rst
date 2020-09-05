@@ -24,7 +24,7 @@ To facilitate clarity when discussing various aspects of Manifesto, this glossar
    **Class**
       A specific collection of data properties ("title", "author", "body copy", "date of publication") is generically referred to as a *Content Type*. A PHP Class file in Manifesto usually defines the structure of a content type, enumerating its properties, and methods for maniulating it (display, edit, update, etc).
 
-      Often referred to simply a *class,* since the PHP class file is what describes the technical implementation of a content type.
+      Often referred to as simply a *class,* since the PHP class file is what describes the technical implementation of a content type. WordPress' "custom post types" would be individual content types in Manifesto.
 
    **Editor Console**
       The editorial management of content in Manifesto is contained behind a password-protected portal located at http://www.example.org/editor. The term *editor console* is generically used to describe that section of the website.
@@ -38,6 +38,9 @@ To facilitate clarity when discussing various aspects of Manifesto, this glossar
    **Listing Page**
       This expression is used to describe the common page which displays a simple list of all the available objects in a particular module. On the back end, it is the default format for presenting existing content for editing. On the front end, this phrase might refer to e.g. the page that displays your staff directory or list of locations. For sections of the website without much textual content, the "listing page" might also be called a "landing page."
 
+   **ManifestoObject**
+      The base class from which Manifesto content types descend. It defines the basic properties of all content types, such as ID, creation date, associated media, deleted status, etc. Roughly corresponds to the generic "node" in Drupal.
+      
    **Module**
       Manifesto organizes groups of content types and functionality into collections called *modules.* For example, if you decide "I want to have a calendar on my website," you are really asking for a collection of things:
 

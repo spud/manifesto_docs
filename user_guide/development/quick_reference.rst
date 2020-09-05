@@ -54,4 +54,6 @@ echo $d->get_date($format=null);
 **day_long**: Saturday
 **ical_date**: 20120130
 **ical_datetime**: 20120130T144536
+**[strftime_format_string]**: Any valid strftime() format string
 **date**: return default date format (30 Jan 2012)
+
