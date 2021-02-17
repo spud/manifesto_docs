@@ -1,20 +1,20 @@
 ******************
-Important Concepts
-******************
+Important Concepts in Manifesto
+*******************************
 
 In order to have a better understanding of Manifesto's architectural design principles and infrastructure, there are a few points worth emphasizing.
 
 Content
 =======
 
-It is important to remember that, above all, Manifesto is designed for serving *content* more so than *pages.* In this sense, Manifesto fundamentally acts like an API, capable of managing, listing, and displaying structured data of any sort.
+It is important to remember that, above all, Manifesto is designed for serving *content* more so than just *pages.* In this sense, Manifesto fundamentally acts like an API, capable of managing, listing, and displaying structured data of any sort.
 
-It happens to have an excellent module for serving HTML-pages-as-content (you could host an entire site using only the **TemplatePages** module), but it also works well for mailing list archives, or CD collections, or concert events, where each of those content types is a first-class citizen of Manifesto, with its own database structure, access methods, and view templates.
+It happens to have an excellent module for serving HTML-pages-as-content (you could host an entire site using only the **TemplatePages** module), but it also works well for mailing list archives, or CD collections, or concert events, where each of those content types is a **first-class citizen** of Manifesto, with its own database structure, access methods, and view templates.
 
 The PageController
 ==================
 
-Manifesto takes advantage of an supervisory object called the PageController (instantiated as the object $G).
+Manifesto takes advantage of an supervisory object called the PageController (instantiated as the object ``$G``).
 
 The PageController acts as a storage repository for site preferences, current language, loaded modules, current user and other information that is convenient to have readily stored for use in business logic and page rendering. Consequently, you will frequently see::
 
@@ -53,7 +53,7 @@ to represent the content, where "my-news-title" is the shortname property for Da
 Controllers
 ===========
 
-Every module provides its own controller script, named "controller.inc." Manifesto, however, includes a unique step *between* the route and the controller in the form of a script called ``module_prep.inc``. Some interesting things happen in module_prep.inc::
+Every module provides its own controller script, named "controller.inc." Manifesto, however, includes a unique step *between* the route and the controller in the form of a script called ``module_prep.inc``. Some interesting things happen in module_prep.inc:
 
 * Manifesto checks to confirm that the current user has "read" access to the current module
 * Any request for a unique piece of content will require looking up the content in the database, so Manifesto attempts to retrieve the content and stores the result in ``$G->contentobj``. This saves developers the trouble of having to repeat the process of retrieving the content for every method handled by the controller.
@@ -69,5 +69,5 @@ Manifesto buffers its javascript output before rendering it to the screen, and t
 
 $G->add_script('my-custom-javascript', G_URL.'site/themes/my-theme/custom.js');
 
-from anywhere in your script prior to loading the page layout template, your script will be output when the ``PageController::output_scripts()`` call is made in the template.
+from anywhere in your script prior to loading the page layout template, your script will be output when the ``PageController::output_scripts()`` call is made in the template, usually at the bottom of the page_layout templates.
 

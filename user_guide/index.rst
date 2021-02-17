@@ -11,10 +11,9 @@ Manifesto Documentation
 User Guide
 ************
 
-.. figure:: images/manifesto-bubble-logo.*
+.. figure:: images/manifesto-logo-@2x.*
    :align: right
-   :width: 400 px
-   :scale: 50
+   :scale: 25
    :alt: Manifesto logo
 
 Manifesto is a object-oriented Content Management System (CMS) and PHP framework for managing complex structured data and rendering that content, whether as web pages, RSS reeds, iCalendar output, or a web service API.
@@ -31,6 +30,10 @@ Contents:
    accounts
    editor_console
    managing_content
+   media_management
+   categories
+   wysiwyg
+   debugging
    admin_console
    scenarios
    troubleshooting
