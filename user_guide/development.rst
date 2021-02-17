@@ -11,6 +11,7 @@ The following pages are for advanced users, and explain some of the inner workin
    development/important_concepts
    development/new_theme
    development/template_hierarchy
+   development/flow
    development/quick_reference
    development/overview
    development/modularity
