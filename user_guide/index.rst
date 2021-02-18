@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 #######################
-Manifesto Documentation
+Manifesto Document@tion
 #######################
 
 ==========
@@ -23,7 +23,7 @@ This guide is designed to provide an overview of Manifesto as it is used to mana
 Contents:
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
 
    overview
    glossary
@@ -44,8 +44,9 @@ Developer Guide
 ===============
 
 .. toctree::
+   :maxdepth: 2
 
-   index
+   manifesto_developer_guide/index
 
 ******************
 Indices and tables
