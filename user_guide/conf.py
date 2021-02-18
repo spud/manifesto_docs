@@ -46,7 +46,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Manifesto User Guide'
-copyright = u'2018, a.h.s. boy'
+copyright = u'2021, a.h.s. boy'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the

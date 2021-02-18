@@ -7,9 +7,9 @@
 Manifesto Documentation
 #######################
 
-************
+==========
 User Guide
-************
+==========
 
 .. figure:: images/manifesto-logo-@2x.*
    :align: right
@@ -39,11 +39,13 @@ Contents:
    troubleshooting
 
 
-***************
+===============
 Developer Guide
-***************
+===============
 
 .. toctree::
+
+   index
 
    development
 
