@@ -1,0 +1,3 @@
+[submodule "developer_guide"]
+	path = developer_guide
+	url = https://spud@github.com/spud/manifesto_developer_guide
