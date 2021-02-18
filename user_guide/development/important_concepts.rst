@@ -1,4 +1,4 @@
-******************
+*******************************
 Important Concepts in Manifesto
 *******************************
 
@@ -28,9 +28,9 @@ Routing
 At a fundamental level, URLs in Manifesto identify unique views by specifying the following information:
 
 * A module that provides the content (stored as ``$G->req_module``)
-* A specific content type (stored as ``$G->req_class``)
 * A specific ID for the content (stored as ``$G->req_id``)
 * A specific action to take (edit, display, delete, update, etc, stored as ``$G->req_function``)
+* A specific content type (more common on the backend, stored as ``$G->req_class``)
 
 Routes -- the mapping between URL structure and handling the page request -- are configured in ``sites/routes.php``. They function, basically, by converting segments of the URL to those pieces of information. Custom URLs work by assigning default values to some of those variables.
 
