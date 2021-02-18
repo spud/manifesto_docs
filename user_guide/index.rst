@@ -47,9 +47,6 @@ Developer Guide
 
    index
 
-   development
-
-
 ******************
 Indices and tables
 ******************
