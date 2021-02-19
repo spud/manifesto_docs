@@ -46,7 +46,7 @@ Developer Guide
 .. toctree::
    :maxdepth: 2
 
-   developer_guide/index
+   index
 
 ******************
 Indices and tables
