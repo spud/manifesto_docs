@@ -23,18 +23,28 @@ This guide is designed to provide an overview of Manifesto as it is used to mana
 Contents:
 
 .. toctree::
-   :maxdepth: 3
 
-   index
+   overview
+   glossary
+   accounts
+   editor_console
+   managing_content
+   media_management
+   categories
+   wysiwyg
+   debugging
+   admin_console
+   scenarios
+   troubleshooting
+
 
 ===============
 Developer Guide
 ===============
 
 .. toctree::
-   :maxdepth: 3
 
-   index
+   developer_guide/index
 
 ******************
 Indices and tables
