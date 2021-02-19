@@ -46,7 +46,7 @@ Developer Guide
 .. toctree::
    :maxdepth: 2
 
-   manifesto_developer_guide/index
+   developer_guide/index
 
 ******************
 Indices and tables
