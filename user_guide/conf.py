@@ -288,7 +288,7 @@ texinfo_documents = [
 epub_title = u'Manifesto User Guide'
 epub_author = u'a.h.s. boy'
 epub_publisher = u'a.h.s. boy'
-epub_copyright = u'2014, a.h.s. boy'
+epub_copyright = u'2021, a.h.s. boy'
 
 # The basename for the epub file. It defaults to the project name.
 #epub_basename = u'Manifesto User Guide'
