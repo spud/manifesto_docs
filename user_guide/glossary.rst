@@ -16,7 +16,7 @@ To facilitate clarity when discussing various aspects of Manifesto, this glossar
       There are, of course, rather complicated rules in place to help ensure that the "freshness" of the content is appropriately gauged -- a calendar listing needs more constant freshening than a privacy policy page. Manifesto is desgined to handle these situations effectively, always returning the most up-to-date content, but the cache may always be cleared manually without repercussion.
 
    **Content Object**
-      This term is used to describe a specific instance of a *Content Type*. While "CalendarEvent" is a *content type, the event "Lunch with Bono on January 12" is a *content object* -- a particular instance of a generic type. You can generally think of content objects as analogs to their real world counterparts: a book, an event, a user profile, an HTML page -- these are all various *content objects* you may find in Manifesto.
+      This term is used to describe a specific instance of a *Content Type*. While "CalendarEvent" is a *content type,* the event "Lunch with Bono on January 12" is a *content object* -- a particular instance of a generic type. You can generally think of content objects as analogs to their real world counterparts: a book, an event, a user profile, an HTML page -- these are all various *content objects* you may find in Manifesto.
 
       There is no direct relationship between a "web page" and a "content object" -- a web page may display several content objects at once (a listing of upcoming events), or just one (a single blog post and nothing else).
 
@@ -26,14 +26,28 @@ To facilitate clarity when discussing various aspects of Manifesto, this glossar
 
       Often referred to as simply a *class,* since the PHP class file is what describes the technical implementation of a content type. WordPress' "custom post types" would be individual content types in Manifesto.
 
+  **Controller**
+      Every module has a controller file, which handles the incoming request and properly routes code execution to the proper sequence. It is a standard component of the MVC (Model-View-Controller) paradigm common to many CMSes.
+
+      Unlike most of Manifesto, controllers are purely functional programming, with a `switch` statement for handling the request, rather than the controller being an Object with methods handling the request. In Manifesto, the snippets of code for responding to a particular request are called "handers" for the sake of convenience.
+
    **Editor Console**
       The editorial management of content in Manifesto is contained behind a password-protected portal located at http://www.example.org/editor. The term *editor console* is generically used to describe that section of the website.
+
+   **Event**
+      Manifesto's code is filled with specific locations where outside code is permitted to interact or insinuate itself into the program execution. Those locations are called "Events" (sometimes referred to as "hooks"). For example, there is a "page_end" event that allows modules to add output to the end of the HTML page, and there is an "object_edit" event that allows modules to modify the editing interface for some kinds of content. cf. the **Listener** entry, which describes the code that responds to events.
+
+   **Handler**
+      An informal way to describe the fork responsible for responding to a particular function within a controller. For example, most modules have some code in the controller.inc file to execute whenever a page is displayed, and that code would be referred to as "the display handler."
 
    **Icon**
       When more than one image is associated with a content object, we may wish to select one of these images to be the official representative photo for the content. Such a selected photo is referred to as the `icon` of the content.
 
    **Landing Page**
       This usually refers to the top-level page of a particular section of your website, e.g. the page you arrive at when you click on "News" might be referred to as the "News landing page."
+
+   **Listener**
+      A Listener is a bit of code designed to respond when a particular event is triggered. For example, when the "page_end" event is triggered, the jQuery module has a listener that will output the code necessary to load jQuery at the end of the page.
 
    **Listing Page**
       This expression is used to describe the common page which displays a simple list of all the available objects in a particular module. On the back end, it is the default format for presenting existing content for editing. On the front end, this phrase might refer to e.g. the page that displays your staff directory or list of locations. For sections of the website without much textual content, the "listing page" might also be called a "landing page."
