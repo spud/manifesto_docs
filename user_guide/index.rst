@@ -36,7 +36,7 @@ Contents:
    admin_console
    scenarios
    troubleshooting
-   developer_guide/index
+   /developer_guide/index
 
 
 ===============
@@ -45,7 +45,7 @@ Developer Guide
 
 .. toctree::
 
-   developer_guide/index
+   /developer_guide/index
 
 ******************
 Indices and tables
