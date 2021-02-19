@@ -23,7 +23,8 @@ This guide is designed to provide an overview of Manifesto as it is used to mana
 Contents:
 
 .. toctree::
-
+   :maxdepth: 2
+   
    user_guide/overview
    user_guide/glossary
    user_guide/accounts
@@ -36,6 +37,7 @@ Contents:
    user_guide/admin_console
    user_guide/scenarios
    user_guide/troubleshooting
+   developer_guide/index
 
 
 ===============
