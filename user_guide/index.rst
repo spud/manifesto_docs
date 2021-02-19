@@ -36,6 +36,7 @@ Contents:
    admin_console
    scenarios
    troubleshooting
+   developer_guide/index
 
 
 ===============
