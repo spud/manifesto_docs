@@ -37,7 +37,6 @@ Contents:
    user_guide/admin_console
    user_guide/scenarios
    user_guide/troubleshooting
-   developer_guide/index
 
 
 ===============
@@ -45,6 +44,7 @@ Developer Guide
 ===============
 
 .. toctree::
+   :maxdepth: 2
 
    developer_guide/index
 
