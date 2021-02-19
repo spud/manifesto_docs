@@ -1,8 +1,6 @@
-manifesto_docs
-==============
+Manifesto CMS Documentation
+===========================
 
-This repository holds the Sphinx-generated documentation for Manifesto.
+This repository holds the Sphinx-generated documentation for the [Manifesto CMS](https://www.manifestocms.com/).
 
-It will contain the User Guide, Developer Guide, and Tutorials.
-
-Manifesto Documentation
+It contains the User Guide, Developer Guide, and Tutorials.
