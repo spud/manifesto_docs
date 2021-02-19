@@ -24,6 +24,9 @@ author = 'a.h.s. boy'
 # The full version, including alpha/beta/rc tags
 release = '3.0'
 
+# The master toctree document.
+master_doc = 'index'
+
 
 # -- General configuration ---------------------------------------------------
 
