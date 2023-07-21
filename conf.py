@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Manifesto Documentation'
-copyright = '2021, a.h.s. boy'
+copyright = '2023, a.h.s. boy'
 author = 'a.h.s. boy'
 
 # The full version, including alpha/beta/rc tags
