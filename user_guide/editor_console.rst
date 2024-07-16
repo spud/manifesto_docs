@@ -10,7 +10,7 @@ Manifesto is not a "one size fits all" CMS, where all of the content is shoehorn
 
 On the left-hand side of the Editor Console, you will see a list of the content modules enabled on your site. Clicking on the title will load the editorial landing page for that section, which may have multiple tabs for managing different types of content within that module.
 
-Views
+3 Basic Views
 =====
 For the most part, all of the sections follow a consistent format, and fall into one of 3 types of file:
 
@@ -26,7 +26,7 @@ For the most part, all of the sections follow a consistent format, and fall into
       :height: 400 px
       :target: ./images/editor-view-editing.*
 
-- Display pages, where rendered output from your content is displayed for your reference
+- Editor Display pages, where rendered output from your content is displayed for your reference (may not always resemble public-facing output)
    .. figure:: images/editor-view-display.*
       :width: 800 px
       :height: 400 px

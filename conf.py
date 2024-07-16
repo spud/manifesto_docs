@@ -14,11 +14,13 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
+import os
+
 
 # -- Project information -----------------------------------------------------
 
 project = 'Manifesto Documentation'
-copyright = '2023, a.h.s. boy'
+copyright = '2024, a.h.s. boy'
 author = 'a.h.s. boy'
 
 # The full version, including alpha/beta/rc tags
@@ -56,3 +58,10 @@ html_theme = 'default'
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+# Set canonical URL from the Read the Docs Domain
+html_baseurl = os.environ.get("READTHEDOCS_CANONICAL_URL", "")
+
+# Tell Jinja2 templates the build is running on Read the Docs
+if os.environ.get("READTHEDOCS", "") == "True":
+    html_context["READTHEDOCS"] = True
