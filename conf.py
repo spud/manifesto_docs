@@ -14,9 +14,9 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 # On Read the Docs, you can omit this and RTD will use its theme automatically.
 # If you want to pin it explicitly, ensure the package is available on RTD:
-html_theme = 'sphinx_rtd_theme'
+# html_theme = 'sphinx_rtd_theme'
 # Otherwise, remove the next line:
-#html_theme = 'default'
+html_theme = 'default'
 
 html_static_path = ['_static']
 
