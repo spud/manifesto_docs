@@ -20,11 +20,11 @@ import os
 # -- Project information -----------------------------------------------------
 
 project = 'Manifesto Documentation'
-copyright = '2024, a.h.s. boy'
+copyright = '2025, a.h.s. boy'
 author = 'a.h.s. boy'
 
 # The full version, including alpha/beta/rc tags
-release = '3.0'
+release = '4.0b'
 
 # The master toctree document.
 master_doc = 'index'
